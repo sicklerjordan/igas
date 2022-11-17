@@ -66,7 +66,7 @@ width: 97.5%;
         }
         .banner-image{ 
             width: 100%; 
-            height: 578px;  
+            height: 630px;   
         }
         .navLogo{
             color: #0054A6;
@@ -209,8 +209,7 @@ input {
     list-style-type: none;
     width: 80%;
     background: #f3f3f3;
-    height: 40px; 
-    
+    height: 40px;
 } 
 
 ul {
@@ -251,8 +250,8 @@ input{
 .bottom-square{
     width: 700px;
     right: 0px;
-    height: 480px; 
-    position: absolute; 
+    height: 485.5px; 
+    position: absolute;  
     background: #002856; 
     transform: rotate(180deg);
     opacity: .9; 
@@ -260,7 +259,7 @@ input{
 .first-middle-container{
     display: flex;
     flex-direction: row;
-    height: 600px;
+    height: 600px;  
     width: 100%;
     justify-content: center;
     align-items: center;    
@@ -268,24 +267,37 @@ input{
 }
 .card {
 height: 400px;
-width: 200px;
-border: 1px solid black;
-}
+width: 268px; 
+border-bottom: 5px solid #0054A6; 
+position: relative;
+overflow: hidden;
+} 
 .sub-card{
-    background: #0054A6;
-    opacity: .3; 
+    background: #002856;
+    opacity: .8;  
     width: 100%; 
-    height: 100px;
+    height: 75px; 
     margin-top: 150%;
     transition: 1s; 
+    z-index: 99999; 
+    position: absolute;
+    bottom: 0px;   
 }
 .sub-card:hover{
 height: 100%;
-margin-top: 0 
+bottom: 0; 
+}
+.sub-card > div{
+    color: white;
+    font-family: sans-serif;
+    margin-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px    
 }
 #card-img{ 
     height: 400px;
-    width: 200px; 
+    width: 268px;  
 }
 .footer-distributed{
 	background: #002856; 
@@ -295,6 +307,7 @@ margin-top: 0
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 55px 50px;
+    height: 400px; 
 }
 
 .footer-distributed .footer-left,
@@ -511,7 +524,7 @@ margin-top: 0
   display:flex;
   width:100%; 
   margin: auto;
-  height: 400px; 
+  height: 500px;   
   
    
 }
@@ -542,23 +555,25 @@ margin-top: 0
   font-family: sans-serif;
     font-weight: 100;
 }
-.mid-text > button{
-      background: rgb(236 0 140);
-  color: white;
-  border-radius: 5px;
-    height: 35px;
-  width: 190px;
-  font-weight: 600;
-   box-shadow: 0 1px 1px #333, 0 2px 6px #333;
-  border: none;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  cursor: pointer;
+
+
+.mid-text > button {
+    color: #FFF !important;
+    font-size: 20px !important;
+    padding: 10px 25px;
+    display: table;
+    font-weight: 500;
+    margin: 15px 0 0;
+    background: rgba(0, 103, 166, 1);
+    transition: all 500ms ease-in-out;
+    border: 0;
+    cursor: pointer
 }
 .mid-text > h4{
     font-family: sans-serif; 
   font-size: 30px;
-    color: rgb(0 26 119)
+    color: rgb(0 26 119);
+    font-weight: 500; 
 }
 .mid-header{
   color: rgb(236 0 140);
@@ -570,6 +585,20 @@ margin-top: 0
 .mid-vid{
     width: 550px;    
     border-radius: 0.375rem; 
+}
+.sub-card > p {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 23px;   
+    padding-top: 10px;
+    padding-bottom: 10px;   
+    text-align: center; 
+    transition: 1s;    
+    letter-spacing: 2px; 
+}
+.sub-card:hover p{
+background-color: #0054A6; 
 }
     </style>
 </head>
@@ -672,18 +701,37 @@ Super Markets, Fast Food, Apartment Complexes,<br/> Resorts, Service Centers and
     </div>
     <div class="first-middle-container"> 
       <div class="card">
+           
         <div class="sub-card">
-            <img id="card-img" src="long-truck.jpg" />  
+            <p>Refrigerants</p> 
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae aliquet nec ullamcorper sit amet risus nullam.</div>
+            <div>Learn More <i class="fa-solid fa-arrow-right"></i></div>  
         </div>
+        <img id="card-img" src="gasStation.jpg" />  
       </div>
       <div class="card">
-        <div class="sub-card"></div>
+        <div class="sub-card">
+            <p>Refrigerant<br/> Disposal</p>     
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae aliquet nec ullamcorper sit amet risus nullam.</div>
+            <div>Learn More <i class="fa-solid fa-arrow-right"></i></div> 
+        </div> 
+        <img id="card-img" src="long-truck.jpg" />  
       </div>
       <div class="card">
-        <div class="sub-card"></div>
+        <div class="sub-card">
+            <p>Refrigerants<br/> Analysis</p>   
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae aliquet nec ullamcorper sit amet risus nullam.</div>
+            <div>Learn More <i class="fa-solid fa-arrow-right"></i></div> 
+        </div>
+        <img id="card-img" src="long-truck.jpg" /> 
       </div>
       <div class="card">
-        <div class="sub-card"></div>
+        <div class="sub-card">
+            <p>Reclamation</p> 
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae aliquet nec ullamcorper sit amet risus nullam.</div>
+            <div>Learn More <i class="fa-solid fa-arrow-right"></i></div> 
+        </div>
+        <img id="card-img" src="long-truck.jpg" />  
       </div>
     </div> 
     <div class="middle-container"> 
@@ -700,7 +748,7 @@ Super Markets, Fast Food, Apartment Complexes,<br/> Resorts, Service Centers and
         <div class="mid-text" style="padding-left: 50px">  
           <h4>Learn More</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae aliquet nec ullamcorper sit amet risus nullam. Ut porttitor leo a diam sollicitudin. Id diam maecenas ultricies mi eget mauris pharetra et. Faucibus nisl tincidunt eget nullam non nisi est sit amet. </p>
-          <button  style="background: rgba(0, 103, 166, 1);">Products And Services</button>
+          <button  style="background: rgba(0, 103, 166, 1);">Products And Services <i class="fa-solid fa-arrow-right"></i></button>
         </div>
         <div class="mid-image">
          <img class="mid-vid" src="field.jpg" />
@@ -711,9 +759,9 @@ Super Markets, Fast Food, Apartment Complexes,<br/> Resorts, Service Centers and
           <img class="mid-vid" src="field.jpg" />  
         </div>
         <div class="mid-text">
-          <h4>Contact Us</h4>
+          <h4>Contact Us</h4> 
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae aliquet nec ullamcorper sit amet risus nullam. Ut porttitor leo a diam sollicitudin. Id diam maecenas ultricies mi eget mauris pharetra et. Faucibus nisl tincidunt eget nullam non nisi est sit amet. </p>
-          <button style="background: rgba(0, 103, 166, 1);">Products And Services</button>
+          <button style="background: rgba(0, 103, 166, 1);">Products And Services <i class="fa-solid fa-arrow-right"></i></button>
         </div>
       </div>
       <div>
@@ -754,7 +802,7 @@ Super Markets, Fast Food, Apartment Complexes,<br/> Resorts, Service Centers and
 
             <div>
                 <i class="fa fa-envelope"></i>
-                <p><a href="mailto:support@company.com">support@company.com</a></p>
+                <p><a href="mailto:support@company.com">someEmailMaybe?@igas.com</a></p> 
             </div>
 
         </div>
@@ -768,10 +816,10 @@ Super Markets, Fast Food, Apartment Complexes,<br/> Resorts, Service Centers and
 
             <div class="footer-icons">
 
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>  
+                <a href="#"><i class="fa-brands fa-google"></i></i></a> 
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
+                <a href="#"><i class="fa-brands fa-instagram"></i></a> 
 
             </div>
 
