@@ -5,27 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" ></script> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script> 
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-       /* NAVBAR CSSSSS */
-
-        .navBar{
-            display: flex;
-            justify-content: space-between;
-            background-color: whitesmoke;
+  /* NAVBAR CSSSSS */
+* {
+    padding: 0;
+    margin: 0px;
+}
+  .navBar{
+            display: flex; 
+            background-color: #262f47;
             padding: 20px;
-            padding-bottom: 10px;
-            padding-top: 10px;
+            padding-bottom: 5px;
+            padding-top: 0px; 
             position: absolute;
             width: 100%; 
             -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
@@ -33,8 +34,9 @@
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-z-index: 9999;
+z-index: 999999999999; 
 width: 97.5%;
+
         }
         .logo{
             font-weight: 900;
@@ -48,18 +50,20 @@ width: 97.5%;
            
         }
         .link{
-            margin: 0 50px;
-            font-family: sans-serif;
-            font-size: 1rem; 
+            margin: 0 30px;
+            font-family: sans-serif; 
+            font-size: 14px; 
             cursor: pointer;
             font-size:'Montserrat', sans-serif;
             display: flex;
             align-items: center;
+            color: white;
+            font-weight: bold 
         }
         .banner{
             width: 100%;
-            height: 40px;  
-            background-color: #021333;
+            height: 10px;  
+            background-color: #002856;  
     background-position: center center;
     background-repeat: no-repeat; 
     border-width: 0px 0px 0px 0px;
@@ -69,10 +73,10 @@ width: 97.5%;
         }
         .banner-image{ 
             width: 100%; 
-            height: 648px;    
+            height: 100vh;     
         }
         .navLogo{
-            color: #0054A6;
+            color: white;
             width: auto;
             font-family: 'Orbitron', sans-serif; 
         }
@@ -109,8 +113,8 @@ hr{
     transform: rotate(45deg);
 } 
       .square{
-    background: blue;
-    opacity: .7;
+    background: #002856;
+    opacity: .9;
     height: 700px; 
     width: 300px;
     position: absolute;
@@ -121,7 +125,7 @@ hr{
         background-color: #002856; 
     bottom: 0;
     clip-path: polygon(0 0,46% 0,100% 100%,0 100%); 
-    height: var(--height);
+    height: 97.5vh;   
     left: 0;
     position: absolute;
     top: 40px; 
@@ -253,19 +257,18 @@ input{
     height: 480px;  
 }
 .bottom-square{
-    width: 900px;
+    width: 700px;
     right: 0px;
     height: 485.5px; 
     position: absolute;  
     background: #002856; 
-    transform: rotate(180deg); 
+    transform: rotate(180deg);
     opacity: .9; 
-    clip-path: polygon(0 0,66% 0,100% 100%,0 100%); 
 }
 .first-middle-container{
     display: flex;
     flex-direction: row;
-    height: 600px;  
+    height: 500px;    
     width: 100%;
     justify-content: center;
     align-items: center;    
@@ -277,6 +280,7 @@ width: 268px;
 border-bottom: 5px solid #0054A6; 
 position: relative;
 overflow: hidden;
+box-shadow: 3px 3px 8px black;  
 } 
 .sub-card{
     background: #002856;
@@ -447,7 +451,7 @@ background-color: #0054A6;
 
 .footer-distributed .footer-company-about{
 	line-height: 20px;
-	color:  #92999f;
+	color:  white;
 	font-size: 13px;
 	font-weight: normal;
 	margin: 0;
@@ -563,7 +567,14 @@ background-color: #0054A6;
   overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
+}
+
+p{
+    font-family: sans-serif;
+}
+h1, h2, h3 {
+    font-family: sans-serif; 
 }
 
 .mid-text{
@@ -610,76 +621,178 @@ background-color: #0054A6;
     width: 550px;    
     border-radius: 0.375rem; 
 }
+.container-cards{
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 40px 
+}
+.service-cards{
+width: 45%;
+height: 400px;
+border: 1px solid black 
+}
 button{
     cursor: pointer 
 }
 a{
     text-decoration: none;
-}  
+    color: white !important 
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    line-height: 25px;  
+    letter-spacing: 1px; 
+    background: whitesmoke; 
+}
+.about-header{
+    font-weight: 100;
+    font-size: 40px; 
+    font-family: sans-serif; 
+}
+ .about-card{   
+    width: 45%;  
+    height: 300px; 
+    position: relative; 
+    overflow: hidden; 
+    background: white; 
+box-shadow: 1px 1px 8px grey;
+    border-radius: 10px;
 
+ }
+ .about-big-card{
+    background: white;
+    width: 100%;
+    height: 550px; 
+    margin-top: -40px;
+    display: flex; 
+    border-radius: 10px; 
+ } 
+ .about-sub-large{
+background-color: white;
+ width: 75%;
+ height: 80%; 
+ margin: 10px; 
+ margin-top: 60px; 
+ position: relative;  
+overflow: hidden; 
+box-shadow: 3px 3px 8px grey;
+border-radius: 10px;
+
+ }
+ .about-sub-small{
+background-color: white;
+width: 25%; 
+height: 80%;    
+margin: 10px;
+margin-top: 60px; 
+position: relative;  
+overflow: hidden; 
+box-shadow: 3px 3px 8px grey;
+border-radius: 10px;
+ } 
+ .overlay-card{
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 65px 
+ }
+ .overlay-card > img { 
+    height: 500px;
+    width: 100%;
+
+ }
+ .overlay{
+    position: absolute;
+    background: #002856;
+    height: 500px;
+    width: 100%;
+    opacity: .8;   
+ }
+ .overlay-text{
+    position: absolute;  
+    z-index: 999999;
+    text-align: center; 
+    width: 100%;
+ }
+ .bottom-card{
+    background: whitesmoke;
+    width: 200px;
+    height: 300px;  
+    margin: 10px;
+    border-radius: 25px; 
+    margin-top: -100px;
+    z-index: 99999 
+ }
+ .sticky {
+  position: fixed;
+  top: 0;
+  width: 97.5% 
+} 
     </style>
 </head>
 <body>
-
-    <!-- NAVBAR CODEEEE-->
     <div class="container">
         <div class="banner">
-            <div class="banner-links"> 
-                <div class="banner-link">  
-                    LANGUAGE <span class="down-arrow">&#9698;</span> 
-                </div>
-                <hr> 
-                <div class="banner-link">
-                    CONTACT US<i style="margin-left: 7px;"
-                     class="fa fa-phone"></i> 
-                </div>
-                <hr>
-                <div class="banner-link country">
-                    COUNTRY <i style="margin-left: 7px;" class="fa fa-earth-americas"></i>
-                </div>
-            </div> 
+            
         </div>
          
-        <nav class="navBar">  
+        <nav class="navBar"> 
             <div class='logo' style="font-size: 45px">    
-                <a href="index.html"><div class="navLogo">iG<span style="font-size: 30px;">AS</span></div></a>
+                <a href="index.html"><div class="navLogo">iG<span style="font-size: 30px;">AS</span></div></a>  
             </div>
-            
+             
             <div class="links">
                 <div class="link"> 
-                    RECLAMATION
+                    <a href="reclamation.html">RECLAMATION</a>
                 </div>
                 <div class="link">
-                    REFRIGERENT
+                    <a href="refrigerent.html">REFRIGERENT</a>
                 </div>
                 <div class="link">
-                    COMPONENTS
+                    <a href="components.html">COMPONENTS</a>
                 </div>
-                <div class="link">
-                    CONTACT US 
-                </div> 
-                <div class="link">
-                    ABOUT US 
+                <div class="link"> 
+                    <a href="about.html">ABOUT US</a>  
                 </div>
+            </div>
+            <div style="position: absolute;right: 0" > 
+                <i style="color: #E42A11;margin-right: 20px;
+                font-size: 20px;" class="fa-solid fa-earth-americas"></i>
+                <button style="    border: none;
+                background: #E42A11;
+                color: white;
+                font-weight: 900;
+                font-size: 16px;
+                margin-right: 0px; 
+                height: 60px;
+                margin-top: 0px;
+                padding-left: 30px;
+                padding-right: 30px;">Our Products</button>
             </div>
         </nav> 
         <div class="hero-header">  
-            <div class='logo' style="font-size: 80px !important;
+            <div class='logo' style="font-size: 80px !important;   
             margin-left: 0px;">      
-                <div class="navLogo" style="color: white">iG<span style="font-size: 50px;">AS USA</span></div>  
+                <div class="navLogo" style="color: white">IG<span style="font-size: 60px">as usa</span> <span style="font-size: 50px;"></span></div>  
             </div>
             <p style="font-size: 20px;margin-bottom: 20px; color: white ">
-                Refrigeration solutions for Airports, Hospitals,<br/>  
+                Refrigeration solutions for Airports, Hospitals,<br/>   
                 Office Buildings, Restaurants, Manufacturing, <br/>  
               
 Super Markets, Fast Food, Apartment Complexes,<br/> Resorts, Service Centers and more. 
             </p>
-            <a href="products.html">
             <button style="border: none;
-            color: white; 
-            background: #0054A6;
+            color: white;
+            background: #E42A11; 
             padding: 9px 18px;
-            font-size: 20px;">View Services <i class="fa fa-arrow-right"></i></button> </a> 
+            font-size: 20px;">View Services <i class="fa fa-arrow-right"></i></button>  
         </div>
         <div style="max-height: 700px; overflow: hidden;"> 
             <div style="display: flex" class="color-div">
@@ -687,14 +800,17 @@ Super Markets, Fast Food, Apartment Complexes,<br/> Resorts, Service Centers and
             
             <span class="square">
                
-            </span>
+            </span> 
             </div> 
-            <div>
-            <img class="banner-image" src="shorter-truck.jpg" />
-                </div>
+            <div>  
+                <video controls autoplay muted loop poster="shorter-truck.jpg">      
+                    <source src="trimsecondwarevid.mov" type="video/mp4">   
+                    Your browser does not support the video tag.
+                  </video>
+           </div>
         </div>
         <div class="modal">
-            <i id="close-button" class="fa-solid fa-xmark"></i> 
+            <i id="close-button" class="fa-solid fa-xmark"></i>  
             <div class="cmp-cls-v2__header">
                 <span class="cmp-cls-v2__heading">Global</span>
             </div>
@@ -718,75 +834,100 @@ Super Markets, Fast Food, Apartment Complexes,<br/> Resorts, Service Centers and
         </div>
         </div>
     </div>
+    <div>
+        <div style="background: black; position:absolute;z-index: -9; width: 100%;
+        height: 300px;margin-top: -60px;"></div> 
+        <div style="position: absolute; 
+        background: #002856;
+        width: 100%;
+        height: 300px;
+        opacity: .8;
+        z-index: -3;
+        margin-top: -60px;"></div>
+       <p style="    font-size: 48px;
+       line-height: 52px;
+       text-align: center;
+       color: white;  
+       font-family: sans-serif;  
+       font-weight: 700;
+       letter-spacing: -1px;margin-top: 50px;">Mission And Vision</p>  
+       <p style="text-align: center; 
+       color: white;margin-top: 15px;">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <div class="first-middle-container"> 
-      <div class="card">
-           
-        <div class="sub-card">
-            <p>Refrigerants</p> 
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae aliquet nec ullamcorper sit amet risus nullam.</div>
-            <div>Learn More <i class="fa-solid fa-arrow-right"></i></div>  
+        <div class="card">
+             
+          <div class="sub-card">
+              <p>Refrigerants</p> 
+              <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae aliquet nec ullamcorper sit amet risus nullam.</div>
+              <div>Learn More <i class="fa-solid fa-arrow-right"></i></div>  
+          </div>
+          <img id="card-img" src="gasStation.jpg" />  
         </div>
-        <img id="card-img" src="gasStation.jpg" />  
-      </div>
-      <div class="card">
-        <div class="sub-card">
-            <p>Refrigerant<br/> Disposal</p>     
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae aliquet nec ullamcorper sit amet risus nullam.</div>
-            <div>Learn More <i class="fa-solid fa-arrow-right"></i></div> 
+        <div class="card">
+          <div class="sub-card">
+              <p>Refrigerant<br/> Disposal</p>     
+              <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae aliquet nec ullamcorper sit amet risus nullam.</div>
+              <div>Learn More <i class="fa-solid fa-arrow-right"></i></div> 
+          </div> 
+          <img id="card-img" src="long-truck.jpg" />  
+        </div>
+        <div class="card">
+          <div class="sub-card">
+              <p>Refrigerants<br/> Analysis</p>   
+              <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae aliquet nec ullamcorper sit amet risus nullam.</div>
+              <div>Learn More <i class="fa-solid fa-arrow-right"></i></div> 
+          </div>
+          <img id="card-img" src="towergas.jpg" />   
+        </div>
+        <div class="card">
+          <div class="sub-card">
+              <p>Reclamation</p> 
+              <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae aliquet nec ullamcorper sit amet risus nullam.</div>
+              <div>Learn More <i class="fa-solid fa-arrow-right"></i></div> 
+          </div>
+          <img id="card-img" src="long-truck.jpg" />   
         </div> 
-        <img id="card-img" src="long-truck.jpg" />  
-      </div>
-      <div class="card">
-        <div class="sub-card">
-            <p>Refrigerants<br/> Analysis</p>   
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae aliquet nec ullamcorper sit amet risus nullam.</div>
-            <div>Learn More <i class="fa-solid fa-arrow-right"></i></div> 
-        </div>
-        <img id="card-img" src="long-truck.jpg" /> 
-      </div>
-      <div class="card">
-        <div class="sub-card">
-            <p>Reclamation</p> 
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae aliquet nec ullamcorper sit amet risus nullam.</div>
-            <div>Learn More <i class="fa-solid fa-arrow-right"></i></div> 
-        </div>
-        <img id="card-img" src="long-truck.jpg" />  
-      </div>
-    </div> 
-    <div class="middle-container"> 
-        <div class="middle-text">
-            <h2>Why Choose IGas?</h2>   
-            <p>Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet. Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.</p>
-            <button style="border: none;font-size: 19px; background: white; padding: 10px; margin-top: 20px;">Read More About Us <i class="fa fa-arrow-right"></i></button> 
-        </div>
-        <div class="bottom-square"></div>   
-        <img src="warehouse-tanks.jpg" style="height: auto; width: 100%;" />  
-    </div>
-    <div class='container-mid' style="background: #f2f3f4;"> 
-  
-        <div class="mid-text" style="padding-left: 50px">  
-          <h4>Learn More</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae aliquet nec ullamcorper sit amet risus nullam. Ut porttitor leo a diam sollicitudin. Id diam maecenas ultricies mi eget mauris pharetra et. Faucibus nisl tincidunt eget nullam non nisi est sit amet. </p>
-          <button  style="background: rgba(0, 103, 166, 1);">Products And Services <i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-        <div class="mid-image">
-         <img class="mid-vid" src="field.jpg" />
-        </div>
-      </div>
-      <div class='container-mid'>
-        <div class="mid-image">
-          <img class="mid-vid" src="field.jpg" />  
-        </div>
-        <div class="mid-text">
-          <h4>Contact Us</h4> 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae aliquet nec ullamcorper sit amet risus nullam. Ut porttitor leo a diam sollicitudin. Id diam maecenas ultricies mi eget mauris pharetra et. Faucibus nisl tincidunt eget nullam non nisi est sit amet. </p>
-          <button style="background: rgba(0, 103, 166, 1);">Products And Services <i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-      </div>
-      <div>
-    <footer class="footer-distributed">
+        <div style="position: absolute;  font-weight: 900; width: 100%;">   
+            <p style="width: 600px;
+            margin-left: 750px;
+            margin-top: 500px;  
+            color: grey;
+            font-weight: 100;
+            line-height: 25px;
+            letter-spacing: .5px;
+        ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 
+            </p>
+        </div>
+      </div> 
+      <div class="overlay-card">
+        <div class="overlay-text">       
+        <h2 style="font-size: 60px;">Lorem ipsum dolor sit </h2>
+        <p style="width:600px;margin: auto;
+        margin-top: 20px;margin-bottom: 25px; 
+    line-height: 25px;
+    letter-spacing: .5px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+        <div> 
+            <button style="color: white;background: #002856;border: none;font-size: 20px;padding: 13px 38px;">Learn More</button>  
+            <button style="    color: #E42A11;
+            background: transparent; 
+            border: 2px solid #E42A11;
+            padding: 10px 30px;
+            font-size: 20px;">See Products</button> 
+        </div>
+        </div>
+        
+        <div class="overlay"></div>  
+        <img style="width: 100%" src="shorter-truck.jpg" /> 
+      </div>
+      <div style="height: 300px;width: 100%; display: flex;justify-content: center;align-items: center;">
+        <div class="bottom-card"></div>
+        <div class="bottom-card" style="background: #002856 !important"></div>
+        <div class="bottom-card"></div> 
+    </div>
+    <footer class="footer-distributed"> 
+  
         <div class="footer-left">
 
             <div class='logo' style="font-size: 45px;">    
@@ -845,37 +986,25 @@ Super Markets, Fast Food, Apartment Complexes,<br/> Resorts, Service Centers and
 
         </div>
 
-    </footer>
+    </footer> 
+    </div>
     <script>
-         gsap.from('.hero-header', {duration: 2, delay: 1.9, opacity: 0})  
-       gsap.from('.square', {duration: 2, delay: 1, x: -900})  
-       const close = document.querySelector('#close-button')  
-       const modal = document.querySelector('.modal')
-       close.addEventListener('click', () => {  
-        modal.style.display = "none" 
-       })
-       const country = document.querySelector('.country')
-       country.addEventListener('click', () => {
-        modal.style.display = "block"
-       })  
-       gsap.from(".first-middle-container", {    
-  scrollTrigger: ".first-middle-container",  
-  duration: 3,  
-  delay: .5,// start the animatio n when ".box" enters the viewport (once)
-  opacity: 0    
-});
-       gsap.from(".middle-text", {    
-  scrollTrigger: ".middle-text",  
-  delay:.5, 
-  duration: 2, // start the animatio n when ".box" enters the viewport (once)
-  x: 500
-});
-       gsap.from(".bottom-square", {    
-  scrollTrigger: ".bottom-square", 
-  delay: .5,
-  duration: 2, // start the animatio n when ".box" enters the viewport (once)
-  x: 500
-});
-    </script> 
+        window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.querySelector(".navBar"); 
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+    </script>
 </body>
 </html>
