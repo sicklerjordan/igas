@@ -30,10 +30,10 @@
             position: absolute;
             width: 100%; 
             -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
 z-index: 999999999999; 
 width: 97.5%;
 
@@ -125,7 +125,7 @@ hr{
         background-color: #002856; 
     bottom: 0;
     clip-path: polygon(0 0,46% 0,100% 100%,0 100%); 
-    height: 97.5vh;   
+    height: 370px;      
     left: 0;
     position: absolute;
     top: 40px; 
@@ -223,7 +223,12 @@ input {
 ul {
     list-style-type: none;
 }
-
+i.fa.fa-magnifying-glass {
+    position: absolute;
+    font-size: 23px;
+    left: 62px;
+    top: 152px;
+}
 input{
     padding-left: 35px;
     margin-left: 10%   
@@ -237,117 +242,191 @@ input{
     position: absolute;
     font-family: sans-serif;
     font-weight: bold;
-    z-index: 999999;
-    margin-top: 280px;  
+    z-index: 999999; 
+    margin-top: 180px;    
     color: #021333;
     margin-left: 8%;
 
 }
 /* END OF HERO CODE */
 
+/* MIDDLE CARDS CODE */
+
+.middle-container{
+    width: 100%;
+    height: 480px;  
+}
+.bottom-square{
+    width: 700px;
+    right: 0px;
+    height: 485.5px; 
+    position: absolute;  
+    background: #002856; 
+    transform: rotate(180deg);
+    opacity: .9; 
+}
+.first-middle-container{
+    display: flex;
+    flex-direction: row;
+    height: 500px;    
+    width: 100%;
+    justify-content: center;
+    align-items: center;    
+    gap: 40px; 
+}
+.card {
+height: 400px;
+width: 268px; 
+border-bottom: 5px solid #0054A6; 
+position: relative;
+overflow: hidden;
+box-shadow: 3px 3px 8px black;  
+} 
+.sub-card{
+    background: #002856;
+    opacity: .8;  
+    width: 100%; 
+    height: 75px; 
+    margin-top: 150%;
+    transition: 1s; 
+    z-index: 99999; 
+    position: absolute;
+    bottom: 0px;   
+}
+.sub-card:hover{
+height: 100%;
+bottom: 0; 
+}
+.sub-card > div{
+    color: white;
+    font-family: sans-serif;
+    margin-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px    
+}
+#card-img{ 
+    height: 400px;
+    width: 268px;  
+}
+.sub-card > p {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 23px;   
+    padding-top: 10px;
+    padding-bottom: 10px;   
+    text-align: center; 
+    transition: 1s;    
+    letter-spacing: 2px; 
+}
+.sub-card:hover p{
+background-color: #0054A6; 
+}
+
 /* FOOTER CSS CODE */
 
 .footer-distributed{
-	background: #002856; 
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold 16px sans-serif;
-	padding: 55px 50px;
+    background: #262f47; 
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
     height: 400px; 
 }
 
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
 .footer-distributed .footer-right{
-	display: inline-block;
-	vertical-align: top;
+    display: inline-block;
+    vertical-align: top;
 }
 
 /* Footer left */
 
 .footer-distributed .footer-left{
-	width: 40%;
+    width: 40%;
 }
 
 /* The company logo */
 
 .footer-distributed h3{
-	color:  #ffffff;
-	font: normal 36px 'Open Sans', cursive;
-	margin: 0;
+    color:  #ffffff;
+    font: normal 36px 'Open Sans', cursive;
+    margin: 0;
 }
 
 .footer-distributed h3 span{
-	color:  lightseagreen;
+    color:  lightseagreen;
 }
 
 /* Footer links */
 
 .footer-distributed .footer-links{
-	color:  #ffffff;
-	margin: 20px 0 12px;
-	padding: 0;
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
 }
 
 .footer-distributed .footer-links a{
-	display:inline-block;
-	line-height: 1.8;
+    display:inline-block;
+    line-height: 1.8;
   font-weight:400;
-	text-decoration: none;
-	color:  inherit;
+    text-decoration: none;
+    color:  inherit;
 }
 
 .footer-distributed .footer-company-name{
-	color:  white;
-	font-size: 14px;
-	font-weight: normal;
-	margin: 0;
+    color:  #E42A11;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
 }
 
 /* Footer Center */
 
 .footer-distributed .footer-center{
-	width: 35%;
+    width: 35%;
 }
 
 .footer-distributed .footer-center i{
-	background-color:  #33383b;
-	color: #ffffff;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
+    background-color:  #E42A11; 
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
 }
 
 .footer-distributed .footer-center i.fa-envelope{
-	font-size: 17px;
-	line-height: 38px;
+    font-size: 17px;
+    line-height: 38px;
 }
 
 .footer-distributed .footer-center p{
-	display: inline-block;
-	color: #ffffff;
+    display: inline-block;
+    color: #ffffff;
   font-weight:400;
-	vertical-align: middle;
-	margin:0;
+    vertical-align: middle;
+    margin:0;
 }
 
 .footer-distributed .footer-center p span{
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:2;
-}
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+} 
 
 .footer-distributed .footer-center p a{
-	color:  lightseagreen;
-	text-decoration: none;;
+    color:  white;
+    text-decoration: none;
 }
 
 .footer-distributed .footer-links a:before {
@@ -367,70 +446,68 @@ input{
 /* Footer Right */
 
 .footer-distributed .footer-right{
-	width: 20%;
+    width: 20%;
 }
 
 .footer-distributed .footer-company-about{
-	line-height: 20px;
-	color:  white;
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
+    line-height: 20px;
+    color:  white;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
 }
 
 .footer-distributed .footer-company-about span{
-	display: block;
-	color:  #ffffff;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 20px;
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .footer-distributed .footer-icons{
-	margin-top: 25px;
+    margin-top: 25px;
 }
 
 .footer-distributed .footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #E42A11; 
-	border-radius: 2px; 
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #E42A11; 
+    border-radius: 2px;
 
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
 
-	margin-right: 3px;
-	margin-bottom: 5px;
+    margin-right: 3px;
+    margin-bottom: 5px;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {
 
-	.footer-distributed{
-		font: bold 14px sans-serif;
-	}
+    .footer-distributed{
+        font: bold 14px sans-serif;
+    }
 
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
 
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
+    .footer-distributed .footer-center i{
+        margin-left: 0;
+    }
 
 }
-
-
 p{
     font-family: sans-serif;
 }
@@ -438,12 +515,97 @@ h1, h2, h3 {
     font-family: sans-serif; 
 }
 
-
- .sticky {
-  position: fixed;
-  top: 0;
-  width: 97.5% 
+button{
+    cursor: pointer 
+}
+a {
+    text-decoration: none !important;
+    color: white; 
 } 
+.top-head{
+    font-size: 48px;
+       line-height: 52px;
+       text-align: center;
+       color: black;  
+       font-family: sans-serif;  
+       letter-spacing: -1px;
+       font-weight: 100;
+    margin-top: 150px;
+}  
+middle-container{
+    width: 100%;
+    height: 480px;  
+}
+.bottom-square{
+    width: 700px;
+    right: 0px;
+    height: 485.5px; 
+    position: absolute;  
+    background: #002856; 
+    transform: rotate(180deg);
+    opacity: .9; 
+}
+.first-middle-container{
+    display: flex;
+    flex-direction: row;
+    height: 500px;    
+    width: 100%;
+    justify-content: center;
+    align-items: center;    
+    gap: 40px; 
+}
+.card {
+height: 400px;
+width: 268px; 
+border-bottom: 5px solid #0054A6; 
+position: relative;
+overflow: hidden;
+box-shadow: 3px 3px 8px black;  
+} 
+.sub-card{
+    background: #002856;
+    opacity: .8;  
+    width: 100%; 
+    height: 75px; 
+    margin-top: 150%;
+    transition: 1s; 
+    z-index: 99999; 
+    position: absolute;
+    bottom: 0px;   
+}
+.sub-card:hover{
+height: 100%;
+bottom: 0; 
+} 
+.sub-card > div{
+    color: white;
+    font-family: sans-serif;
+    margin-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px;    
+    line-height: 25px;  
+}
+#card-img{ 
+    height: 400px;
+    width: 268px;  
+}
+.sub-card > p {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 23px;   
+    padding-top: 10px;
+    padding-bottom: 10px;   
+    text-align: center; 
+    transition: 1s;    
+    letter-spacing: 2px; 
+}
+.sub-card:hover p{
+background-color: #0054A6; 
+}
+
+
     </style>
 </head>
 <body>
@@ -487,15 +649,18 @@ h1, h2, h3 {
             </div>
         </nav> 
         <div class="hero-header">  
-            <div class='logo' style="font-size: 60px !important;     
-            margin-left: 0px;">      
-                <div class="navLogo" style="color: white">Reclamation</div>   
+            <div class='logo' style="font-size: 32px !important;    
+            margin-left: 0px;">       
+                <div class="navLogo" style="color: white">iClaim Reclaim Our Future</div>   
             </div>
-            <p style="font-size: 20px;margin-bottom: 20px; color: white "> 
-                Refrigeration solutions for Airports, Hospitals,<br/>   
-                Office Buildings, Restaurants, Manufacturing, <br/>  
-              
-Super Markets, Fast Food, Apartment Complexes,<br/> Resorts, Service Centers and more. 
+            <p style="font-size: 16px;margin-bottom: 20px; color: white; "> 
+                Recovering, reclaiming, and repurposing
+
+HFC, HCFC,<br/> and CFC gases to minimize waste,
+
+minimize virgin<br/> production, as well as separate mixed gases  
+
+and remove<br/> contaminants to maximize the lifecycle of refrigerants.  
             </p>
             <button style="border: none;
             color: white;
@@ -503,20 +668,18 @@ Super Markets, Fast Food, Apartment Complexes,<br/> Resorts, Service Centers and
             padding: 9px 18px;
             font-size: 20px;">View Services <i class="fa fa-arrow-right"></i></button>  
         </div>
-        <div style="max-height: 700px; overflow: hidden;"> 
+        <div style="max-height: 400px; overflow: hidden;"> 
             <div style="display: flex" class="color-div">
-                
-            
             <span class="square">
                
             </span> 
             </div> 
-            <div>  
-                <video controls autoplay muted loop poster="shorter-truck.jpg">      
+            <div>   
+                <video style="margin-top: -100px;" controls autoplay muted loop poster="shorter-truck.jpg">      
                     <source src="trimsecondwarevid.mov" type="video/mp4">   
                     Your browser does not support the video tag.
                   </video>
-           </div>
+           </div> 
         </div>
         <div class="modal">
             <i id="close-button" class="fa-solid fa-xmark"></i>  
@@ -526,7 +689,7 @@ Super Markets, Fast Food, Apartment Complexes,<br/> Resorts, Service Centers and
                 <div class="cmp-cls-v2__searchbar">
                     <i class="fa fa-magnifying-glass"></i> 
                     <input class="cmp-cls-v2__searchbar-input" autocomplete="off" id="clsV2ListSearch" type="text" placeholder="Search a country">
-                    <span class="cmp-cls-v2__searchbar-input-close-button icon-close" style="visibility: hidden;">
+                    <span class="cmp-cls-v2__searchbar-input-close-button icon-close" style="visibility: hidden;"> 
                 </span></div>
             <ul class="cmp-cls-v2__regions">
                 <li class="cmp-cls-v2__region active" style="visibility: visible;">
@@ -543,7 +706,101 @@ Super Markets, Fast Food, Apartment Complexes,<br/> Resorts, Service Centers and
         </div>
         </div>
     </div>
+    <div>
+        <div style="background: white; position:absolute;z-index: -9; width: 100%;
+        height: 300px;margin-top: -60px;"></div> 
+        <div style="position: absolute; 
+        background: white;
+        width: 100%;
+        height: 300px; 
+        z-index: -3;
+        margin-top: -60px;"></div> 
+       <p class="top-head" style="margin-top: 100px">iClaim™ Difference</p>   
+       <hr style="height: 2px;  
+       background: #E42A11;
+       width: 100px;
+       margin: auto;
+       margin-top: 15px;
+       border: none;"/>  
+       <p style="text-align: center; 
+       color: black;width: 600px;    
+    margin: auto;
+    margin-top: 30px;
+    font-weight: 100;margin-bottom: 30px;line-height: 25px;">iClaim™ provides the highest dollar payout with compensation for <span style="color: #E42A11">EVERY</span> ounce and <span style="color: #E42A11">ANY</span> purity.
 
+With iClaim™, there are NO fees for mixed refrigerants are lower purities. We accept all refrigerants!
+
+iClaim™ recovery cylinders have the lowest exchange requirement with no delay in turnaround time.</p>
+    </div> 
+
+    <div class="first-middle-container"> 
+        <div class="card">
+             
+          <div class="sub-card"> 
+              <p>Analysis Services</p> 
+              <div>iClaim provides exclusive advantages that support a healthy future by reducing global warming by refrigerant lifecycle management.</div>
+              <div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div>  
+          </div>
+          <img id="card-img" src="gasStation.jpg" />  
+        </div>
+        <div class="card">
+          <div class="sub-card">
+              <p>Destruction & Disposal</p>     
+              <div>iGas offers virgin and reclaimed refrigerants in all industry size tanks including refillable and non-refillable cylinders up to ISO containers.</div>
+              <div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div> 
+          </div> 
+          <img id="card-img" src="long-truck.jpg" />  
+        </div>
+        <div class="card">
+          <div class="sub-card">
+              <p>Recovery & Reclamation</p>   
+              <div>iGas’ virgin refrigerants are domestically blended and tested to meet AHRI-700 purity standards for any industry.</div>
+              <div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div>  
+          </div>
+          <img id="card-img" src="towergas.jpg" />     
+        </div>
+        <div class="card">
+          <div class="sub-card"> 
+              <p>Reclaim Interface System (2023)</p>  
+              <div>CoolMaster products assist in making daily work requirements easier, faster, safer, more economical, and improve working conditions for the industry.</div>
+              <div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div> 
+          </div>
+          <img id="card-img" src="long-truck.jpg" />   
+        </div>  
+      </div> 
+    <div>
+        <div style="background: white; position:absolute;z-index: -9; width: 100%;
+        height: 300px;margin-top: -60px;"></div> 
+        <div style="position: absolute; 
+        background: white;
+        width: 100%;
+        height: 300px;  
+        z-index: -3;
+        margin-top: -60px;"></div> 
+       <p class="top-head" style="margin-top: 30px">Exclusive Advantage</p>  
+       <hr style="height: 2px;  
+       background: #E42A11;
+       width: 100px; 
+       margin: auto;
+       margin-top: 15px;
+       border: none;"/>  
+       <p style="text-align: center; 
+       color: black;width: 600px; 
+    margin: auto;
+    margin-top: 30px;width: 500px;
+    font-weight: 100;margin-bottom: 100px;">Customers can add any amount of refrigerant (even one cylinder) or any HVAC products 
+
+to their shipment of empty recovery cylinders at special pricing and free freight allowed!</p>   
+    </div> 
+    <div class="bottom-container" style="display: flex;justify-content: center;align-items: center;gap: 50px;margin-bottom: 50px; ">  
+        <div>
+            <img style="border: 1px solid black; width: 500px;height: 300px;border-radius: 25px;" src="earthfromspace.jpg" /> 
+        </div>
+        <div>
+            <p style="width: 500px;line-height: 25px;letter-spacing: 2px;">iClaim™ helps lower our customer’s carbon footprint by providing globally mindful solutions with a continued emphasis on how to protect and preserve our world.</p>
+        </div> 
+
+    </div>
     <footer class="footer-distributed"> 
   
         <div class="footer-left">
@@ -562,9 +819,9 @@ Super Markets, Fast Food, Apartment Complexes,<br/> Resorts, Service Centers and
                 <a href="#">Faq</a>
                 
                 <a href="#">Contact</a>
-            </p>
+            </p> 
 
-            <p class="footer-company-name">© 2019 iGas USA, Inc., All rights reserved</p>
+            <p class="footer-company-name">© 2023 iGas USA, Inc., All rights reserved</p>
         </div>
 
         <div class="footer-center">

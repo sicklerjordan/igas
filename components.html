@@ -36,6 +36,7 @@
 	-moz-border-radius: 5px;
 z-index: 999999999999; 
 width: 97.5%;
+border-radius: 0px; 
 
         }
         .logo{
@@ -125,7 +126,7 @@ hr{
         background-color: #002856; 
     bottom: 0;
     clip-path: polygon(0 0,46% 0,100% 100%,0 100%); 
-    height: 97.5vh;   
+    height: 370px;      
     left: 0;
     position: absolute;
     top: 40px; 
@@ -242,8 +243,8 @@ input{
     position: absolute;
     font-family: sans-serif;
     font-weight: bold;
-    z-index: 999999;
-    margin-top: 280px;  
+    z-index: 999999; 
+    margin-top: 180px;    
     color: #021333;
     margin-left: 8%;
 
@@ -268,7 +269,7 @@ input{
 .first-middle-container{
     display: flex;
     flex-direction: row;
-    height: 500px;    
+    height: 420px;     
     width: 100%;
     justify-content: center;
     align-items: center;    
@@ -280,7 +281,7 @@ width: 268px;
 border-bottom: 5px solid #0054A6; 
 position: relative;
 overflow: hidden;
-box-shadow: 3px 3px 8px black;
+box-shadow: 3px 3px 8px black;  
 } 
 .sub-card{
     background: #002856;
@@ -327,7 +328,7 @@ background-color: #0054A6;
 /* FOOTER CSS CODE */
 
 .footer-distributed{
-	background: #002856; 
+	background: #262f47; 
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -379,7 +380,7 @@ background-color: #0054A6;
 }
 
 .footer-distributed .footer-company-name{
-	color:  white;
+	color:  #E42A11;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
@@ -392,7 +393,7 @@ background-color: #0054A6;
 }
 
 .footer-distributed .footer-center i{
-	background-color:  #33383b;
+	background-color:  #E42A11; 
 	color: #ffffff;
 	font-size: 25px;
 	width: 38px;
@@ -426,7 +427,7 @@ background-color: #0054A6;
 
 .footer-distributed .footer-center p a{
 	color:  lightseagreen;
-	text-decoration: none;;
+	text-decoration: none;
 }
 
 .footer-distributed .footer-links a:before {
@@ -474,7 +475,7 @@ background-color: #0054A6;
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  #33383b;
+	background-color:  #E42A11; 
 	border-radius: 2px;
 
 	font-size: 20px;
@@ -508,7 +509,6 @@ background-color: #0054A6;
 	}
 
 }
-
 p{
     font-family: sans-serif;
 }
@@ -529,6 +529,13 @@ a{
   top: 0;
   width: 97.5% 
 } 
+.side-box{
+    position: sticky; 
+    margin-top: 50px; 
+    width: 400px;
+    height: 100vh; 
+    border: 1px solid black  
+}
     </style>
 </head>
 <body>
@@ -572,15 +579,16 @@ a{
             </div>
         </nav> 
         <div class="hero-header">  
-            <div class='logo' style="font-size: 60px !important;    
-            margin-left: 0px;">      
-                <div class="navLogo" style="color: white">Components</div>  
+            <div class='logo' style="font-size: 34px !important;      
+            margin-left: 0px;">       
+                <div class="navLogo" style="color: white">HVAC Components page</div>   
             </div>
-            <p style="font-size: 20px;margin-bottom: 20px; color: white ">
-                Refrigeration solutions for Airports, Hospitals,<br/>   
-                Office Buildings, Restaurants, Manufacturing, <br/>  
-              
-Super Markets, Fast Food, Apartment Complexes,<br/> Resorts, Service Centers and more. 
+            <p style="font-size: 18px;margin-bottom: 20px; color: white ">  
+                CoolMaster products assist in making daily work
+
+                <br/> easier, faster, safer, more economical,
+                
+                and improve<br/> working conditions for the industry.
             </p>
             <button style="border: none;
             color: white;
@@ -588,20 +596,18 @@ Super Markets, Fast Food, Apartment Complexes,<br/> Resorts, Service Centers and
             padding: 9px 18px;
             font-size: 20px;">View Services <i class="fa fa-arrow-right"></i></button>  
         </div>
-        <div style="max-height: 700px; overflow: hidden;"> 
+        <div style="max-height: 400px; overflow: hidden;"> 
             <div style="display: flex" class="color-div">
-                
-            
             <span class="square">
                
             </span> 
             </div> 
-            <div>  
-                <video controls autoplay muted loop poster="shorter-truck.jpg">      
+            <div>   
+                <video style="margin-top: -100px;" controls autoplay muted loop poster="shorter-truck.jpg">      
                     <source src="trimsecondwarevid.mov" type="video/mp4">   
                     Your browser does not support the video tag.
                   </video>
-           </div>
+           </div> 
         </div>
         <div class="modal">
             <i id="close-button" class="fa-solid fa-xmark"></i>  
@@ -611,7 +617,7 @@ Super Markets, Fast Food, Apartment Complexes,<br/> Resorts, Service Centers and
                 <div class="cmp-cls-v2__searchbar">
                     <i class="fa fa-magnifying-glass"></i> 
                     <input class="cmp-cls-v2__searchbar-input" autocomplete="off" id="clsV2ListSearch" type="text" placeholder="Search a country">
-                    <span class="cmp-cls-v2__searchbar-input-close-button icon-close" style="visibility: hidden;">
+                    <span class="cmp-cls-v2__searchbar-input-close-button icon-close" style="visibility: hidden;"> 
                 </span></div>
             <ul class="cmp-cls-v2__regions">
                 <li class="cmp-cls-v2__region active" style="visibility: visible;">
@@ -628,7 +634,60 @@ Super Markets, Fast Food, Apartment Complexes,<br/> Resorts, Service Centers and
         </div>
         </div>
     </div>
-
+    <div class="first-middle-container" style="margin-top: 50px"> 
+        <div class="card">
+             
+          <div class="sub-card"> 
+              <p>Air Handler Stands</p> 
+              <div>Two-side adjustable to fit almost any air handler. Made of galvanized steel and powder-coated to resist rust. No screws or bolts for assembly.<br/> Available in the following: 16”, 18”, 24”, 30”, & 36”</div>
+              <div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div>  
+          </div>
+          <img id="card-img" src="gasStation.jpg" />  
+        </div>
+        <div class="card">
+          <div class="sub-card">
+              <p>Duct Knife</p>     
+              <div>Serrated blade on one side and a fine cut blade on the other side for dual usage. Made of stainless steel with a durable wooden handle.<br/> Sheath included for safe transport and carrying.</div>
+              <div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div> 
+          </div> 
+          <img id="card-img" src="long-truck.jpg" />  
+        </div>
+        <div class="card">
+          <div class="sub-card"> 
+              <p>Tank Holder Rack</p>   
+              <div>Made of galvanized steel and powder-coated to resist rust. Mountable to any work vehicle. <br/>Available in the following: 1-50lb/2-30lb/N/A/O, 3-30lb/N/A/O, 3-30lb, 4-30lb, & 4-50lb</div>
+              <div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div>  
+          </div>
+          <img id="card-img" src="towergas.jpg" />   
+        </div>
+      </div> 
+      <div class="first-middle-container" style="margin-bottom: 50px">  
+        <div class="card">
+             
+          <div class="sub-card"> 
+              <p>Tie-Down Clips</p> 
+              <div>Condenser clips made of galvanized steel and powder-coated to resist rust. Can withstand 175mph winds.<br/> Available in the following: 4”x1”, 4”x2”, 6”x1”, 6”x2”, 8”x1”</div>
+              <div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div>  
+          </div>
+          <img id="card-img" src="gasStation.jpg" />  
+        </div>
+        <div class="card">
+          <div class="sub-card">
+              <p>Refrigerant</p>     
+              <div>Safely and effectively transports a vacuum pump, acetylene, oxygen, hoses, manifold, and soldering rods in cart on wheels! Made of galvanized steel and powder-coated to resist rust.</div>
+              <div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div> 
+          </div> 
+          <img id="card-img" src="long-truck.jpg" />  
+        </div> 
+        <div class="card">
+          <div class="sub-card">  
+              <p>Assorted Components</p>   
+              <div>Available products: Contactors<br/> Filter Driers<br/> Hard Start Kits<br/> Transformers<br/> Vibration Absorbers</div>
+              <div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div>  
+          </div>
+          <img id="card-img" src="towergas.jpg" />   
+        </div>
+      </div> 
     <footer class="footer-distributed"> 
   
         <div class="footer-left">
@@ -647,9 +706,9 @@ Super Markets, Fast Food, Apartment Complexes,<br/> Resorts, Service Centers and
                 <a href="#">Faq</a>
                 
                 <a href="#">Contact</a>
-            </p>
+            </p> 
 
-            <p class="footer-company-name">© 2019 iGas USA, Inc., All rights reserved</p>
+            <p class="footer-company-name">© 2023 iGas USA, Inc., All rights reserved</p>
         </div>
 
         <div class="footer-center">
@@ -690,7 +749,7 @@ Super Markets, Fast Food, Apartment Complexes,<br/> Resorts, Service Centers and
         </div>
 
     </footer> 
-    </div>
+    </div> 
     <script>
         window.onscroll = function() {myFunction()};
 
