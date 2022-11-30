@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap" rel="stylesheet">
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css?v=7857324">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css?v=7857324"> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1098,6 +1098,7 @@ Mobile style's
             <div class="ham">
                 <div class="menu-container">
                     <div class="menu">
+                      <a href="#" class="menu-mobile"><i class='fa-solid fa-bars'></i></a>  
                       <ul class="clearfix">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="refrigerent.html">Refrigerant</a></li>
@@ -1384,7 +1385,6 @@ function myFunction() {
 		  "use strict";
 		  $('.menu > ul > li:has( > ul)').addClass('menu-dropdown-icon');
 		  $('.menu > ul > li > ul:not(:has(ul))').addClass('normal-sub');
-		  $(".menu > ul").before("<a href=\"#\" class=\"menu-mobile\"><i class='fa-solid fa-bars'></i></a>"); 
 		  $(".menu > ul > li").hover(function(e) {
 		    if ($(window).width() > 943) {
 		      $(this).children("ul").stop(true, false).fadeToggle(150);
