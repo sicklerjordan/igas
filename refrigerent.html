@@ -529,11 +529,268 @@ a{
   width: 97.5% 
 } 
 .side-box{
-    position: sticky; 
+    position: sticky;  
     margin-top: 50px; 
     width: 400px;
     height: 100vh; 
     border: 1px solid black  
+}
+@media(max-width:900px){
+    
+}
+@media(max-width: 600px){  
+    .large{ 
+        width: 268px !important  
+    }
+    .side-box{
+        display: none
+    }
+    .footer-distributed{
+        height: 700px
+    } 
+}
+.ham{
+    color:#E42A11;
+    position: absolute;
+    width:100%; 
+    margin-top: 13px;
+    font-size: 30px;   
+}
+@media(min-width:900px){
+    .ham{
+        display: none
+    }
+}
+@media(max-width: 900px) {
+    .right-nav-button{
+        display: none 
+    }
+    .links{
+        display: none  
+    }
+}
+.ham-list{
+    visibility: hidden; 
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #E42A11;
+    margin-top: 62px;
+    background: #262f47;
+}
+.fa-bars{
+    display: block
+}
+.fa-xmark{ 
+    visibility: hidden  
+}
+.menu {
+    width: 100%;
+}
+.menu-container {
+  margin: 0 auto; 
+}
+.menu a.logo {
+    display: inline-block;
+    padding: 1.5em 3em;
+    width: 19%;
+    float: left;
+}
+.menu img {
+    max-width: 100%;
+}
+.menu-mobile {
+  display: none;
+  padding: 20px;
+}
+.menu-mobile:after { 
+  font-family: "Ionicons";
+  font-size: 2.5rem;
+  padding: 0;
+  float: right;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+ 
+.menu > ul {
+  margin: 0 auto;
+  width: 80%;
+  list-style: none;
+  padding: 0;
+  position: relative;
+  /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
+  box-sizing: border-box;
+      clear: right;
+}
+.menu > ul:before,
+.menu > ul:after {
+  content: "";
+  display: table;
+}
+.menu > ul:after {
+  clear: both;
+}
+.menu > ul > li {
+  float: left; 
+  padding: 0;
+  margin: 0;
+}
+.menu > ul > li a {
+  text-decoration: none;
+  padding: 1.5em 3em;
+  display: block;
+}
+.menu > ul > li:hover {
+  background: #f0f0f0;
+}
+.menu > ul > li > ul {
+  display: none;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.menu > ul > li > ul:before,
+.menu > ul > li > ul:after {
+  content: "";
+  display: table;
+}
+.menu > ul > li > ul:after {
+  clear: both;
+}
+.menu > ul > li > ul > li {
+  margin: 0;
+  padding-bottom: 0;
+  list-style: none;
+  width: 25%;
+  background: none;
+  float: left;
+}
+.menu > ul > li > ul > li a {
+  color: #777;
+  padding: .2em 0;
+  width: 95%;
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+.menu > ul > li > ul > li a:hover{
+	color:#03a9f4;
+}
+.menu > ul > li > ul > li > ul {
+  display: block;
+  padding: 0;
+  margin: 10px 0 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.menu > ul > li > ul > li > ul:before,
+.menu > ul > li > ul > li > ul:after {
+  content: "";
+  display: table;
+}
+.menu > ul > li > ul > li > ul:after {
+  clear: both;
+}
+.menu > ul > li > ul > li > ul > li {
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+  margin: 0;
+  font-size: .8em;
+}
+.menu > ul > li > ul > li > ul > li a {
+  border: 0;    
+  font-size: 14px;
+
+}
+.menu > ul > li > ul.normal-sub {
+  width: 300px;
+  left: auto;
+  padding: 10px 20px;
+  
+}
+.menu > ul > li > ul.normal-sub > li {
+  width: 100%;
+}
+.menu > ul > li > ul.normal-sub > li a {
+  border: 0;
+  padding: 1em 0;
+}
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Mobile style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (max-width: 959px) {
+  .menu-container {
+    width: 100%;
+  }
+  .menu-container .menu{
+	display:inline-block;
+   }
+  .menu-mobile {
+    display: block;    
+    float: right;    
+    padding: 5px 20px 0; 
+    color: #E42A11 !important; 
+  }
+  .menu-dropdown-icon:before {
+    display: block;
+  }
+  .menu > ul {
+    display: none;
+    width:100%;
+  }
+  .menu > ul > li { 
+    width: 100%;
+    float: none;
+    display: block;
+    border: 2px solid black; 
+  }
+  .menu > ul > li a {
+    padding: 1em; 
+    width: 100%;
+    display: block;
+    color: #E42A11 !important;  
+  }
+  .menu > ul > li > ul {
+    position: relative;    
+    padding: 0 40px;
+  }
+  .menu > ul > li > ul.normal-sub {
+    width: 100%;
+  }
+  .menu > ul > li > ul > li {
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .menu > ul > li > ul > li:first-child {
+    margin: 0;
+  }
+  .menu > ul > li > ul > li > ul {
+    position: relative;
+  }
+  .menu > ul > li > ul > li > ul > li {
+    float: none;
+  }
+  .menu .show-on-mobile {
+    display: block;
+  }
+  
+}
+.clearfix{ 
+    background: #262f47 !important;
+    flex-direction: column; 
+     
 }
     </style>
 </head>
@@ -562,7 +819,7 @@ a{
                     <a href="about.html">ABOUT US</a>  
                 </div>
             </div>
-            <div style="position: absolute;right: 0" > 
+            <div class="right-nav-button" style="position: absolute;right: 0" > 
                 <i style="color: #E42A11;margin-right: 20px;
                 font-size: 20px;" class="fa-solid fa-earth-americas"></i>
                 <button style="    border: none;
@@ -576,7 +833,28 @@ a{
                 padding-left: 30px;
                 padding-right: 30px;">Our Products</button>
             </div>
+            <div class="ham">
+                <div class="menu-container">
+                    <div class="menu">
+                      <ul class="clearfix">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="refrigerent.html">Refrigerant</a></li>
+                        <li><a href="reclamation.html">Reclamation</a></li>
+                        <li><a href="components.html">Components</a></li> 
+                        <li><a href="about.html">About</a></li> 
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+            </div>
         </nav> 
+        <ul class="ham-list">
+            <li>RECLAMATION</li>
+            <li>REFRIGERENT</li>
+            <li>COMPONENTS</li>
+            <li>ABOUT US</li>
+        </ul>  
         <div class="hero-header">  
             <div class='logo' style="font-size: 60px !important;   
             margin-left: 0px;">       
@@ -633,14 +911,14 @@ a{
     <div style="display: flex;"> 
 <div class="side-box"></div>
 <div class="first-middle-container" style="flex-wrap: wrap;height: auto;margin-top: 50px; margin-bottom: 50px;">       
-    <div class="card">
+    <div class="card" >
          
       <div class="sub-card"> 
           <p style="color: #E42A1C">R-134A</p>  
           <div>R-134a is one of the worlds most used refrigerants, as it is very diverse and widely embedded in automotive, commercial, and residential air conditioning systems, across the world</div>
           <div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div>  
       </div>
-      <img id="card-img" src="410A.png" />     
+      <img id="card-img" src="lastgrouptank.jpg" />     
     </div>
     <div class="card">
       <div class="sub-card">
@@ -648,23 +926,23 @@ a{
           <div>R-22 is an HCFC refrigerant used for residential and commercial air conditioning and for medium- and low-temperature commercial refrigeration applications.</div>
           <div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div> 
       </div> 
-      <img id="card-img" src="410A.png" />   
+      <img id="card-img" src="lastgrouptank.jpg" />    
     </div>
-    <div class="card" style="width: 460px;">
+    <div class="card large" style="width: 460px;">
         <div class="sub-card">
             <p style="color: #E42A1C">R-404A</p>     
             <div>R-404A is a non-ozone-depleting replacement for R-502 and R-22 used in commercial refrigerator equipment for low and medium temperature ranges.</div>
             <div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div> 
         </div> 
-        <img id="card-img" src="410A.png" style="width: 460px;"/>      
+        <img id="card-img" class="large" src="lastgrouptank.jpg" style="width: 460px;"/>      
       </div> 
-      <div class="card" style="width: 460px;">
+      <div class="card large" style="width: 460px;">  
         <div class="sub-card">
             <p style="color: #E42A1C">R-407A</p>     
             <div>R-407A is a non-ozone-depleting replacement for R-404A and R-507 in system designs or from existing R-22 refrigeration units.</div>
             <div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div> 
         </div> 
-        <img id="card-img" src="410A.png" style="width: 460px;"/>      
+        <img id="card-img" class="large" src="410A.png" style="width: 460px;"/>      
       </div> 
       <div class="card">
         <div class="sub-card">
@@ -698,32 +976,32 @@ a{
         </div> 
         <img id="card-img" src="gasStation.jpg" />   
       </div> 
-      <div class="card" style="width: 460px;">
+      <div class="card large" style="width: 460px;">
         <div class="sub-card">
             <p style="color: #E42A1C">R-438A</p>     
             <div>R-438A is a non-ozone-depleting R-22 replacement and has the closest performance match to R-22 of all no oil change replacement refrigerants.</div>
             <div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div> 
         </div> 
-        <img id="card-img" src="gasStation.jpg" style="width: 460px;"/>   
+        <img id="card-img" class="large" src="gasStation.jpg" style="width: 460px;"/>   
       </div>
-      <div class="card" style="width: 460px;">
+      <div class="card large" style="width: 460px;">
         <div class="sub-card">
             <p style="color: #E42A1C">R-507</p>     
             <div>R-507 is a non-ozone-depleting refrigerant primarily designed to replace R-502 in low- and medium-temperature commercial refrigeration applications.</div>
             <div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div> 
         </div> 
-        <img id="card-img" src="gasStation.jpg" style="width: 460px;"/>   
+        <img id="card-img" class="large" src="gasStation.jpg" style="width: 460px;"/>   
       </div>  
-      <div class="card" style="width: 460px;">
+      <div class="card large" style="width: 460px;"> 
         <div class="sub-card">
             <p style="color: #E42A1C">R-32 (2023)</p>     
             <div>Coming soon in 2023, R-32 is a next generation refrigerant that efficiently carries heat and has lower environmental impact.</div>
             <div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div> 
         </div> 
-        <img id="card-img" src="gasStation.jpg" style="width: 460px;"/>   
+        <img id="card-img" class="large" src="gasStation.jpg" style="width: 460px;"/>   
       </div>   
 </div>
-</div> 
+</div>  
     <footer class="footer-distributed"> 
   
         <div class="footer-left">
@@ -804,5 +1082,33 @@ function myFunction() {
   }
 }
     </script>
+    <script>
+        $(document).ready(function() {
+           "use strict";
+           $('.menu > ul > li:has( > ul)').addClass('menu-dropdown-icon');
+           $('.menu > ul > li > ul:not(:has(ul))').addClass('normal-sub');
+           $(".menu > ul").before("<a href=\"#\" class=\"menu-mobile\"><i class='fa-solid fa-bars'></i></a>"); 
+           $(".menu > ul > li").hover(function(e) {
+             if ($(window).width() > 943) {
+               $(this).children("ul").stop(true, false).fadeToggle(150);
+               e.preventDefault();
+             }
+           });
+           $(".menu > ul > li").click(function() {
+             if ($(window).width() <= 943) {
+               $(this).children("ul").fadeToggle(150);
+             }
+           });
+           $(".menu-mobile").click(function(e) {
+             $(".menu > ul").toggleClass('show-on-mobile');
+             e.preventDefault();
+           });
+         });
+         $(window).resize(function() {
+           $(".menu > ul > li").children("ul").hide();
+           $(".menu > ul").removeClass('show-on-mobile');
+         });
+  
+     </script>  
 </body>
 </html>
