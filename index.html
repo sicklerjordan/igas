@@ -761,8 +761,7 @@ border-radius: 10px;
   left: 50%; 
   bottom: -222px;
     margin-left: -50px; 
-    width: 100px;
-    border-bottom: 2px solid #E42A11;
+    width: 100px; 
 }
 @media(max-width: 900px){
 .first-middle-container{
@@ -1035,6 +1034,22 @@ Mobile style's
     flex-direction: column; 
      
 }
+.contact-button{
+  border: 1px solid #E42A11;
+  background: none;
+  border-radius: 25px;
+    padding: 10px 20px;
+    color: #E42A11;
+    font-weight: bold;  
+}
+.button-holder{
+  width: 100%;
+  display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 20px;
+    margin-bottom: 50px; 
+}
 @media(max-width: 600px){
     .bottom-footer-text{
         width: 90% !important 
@@ -1051,6 +1066,13 @@ Mobile style's
   } 
   .top-head{
     font-size: 40px
+  }
+  .card{
+    width: 308px 
+  }
+  #card-img{
+    width: 468px;
+    margin-left: -90px; 
   }
 }
 
@@ -1175,13 +1197,19 @@ for residential, commercial, transport, and industrial refrigeration.
     <div>
         <div style="background: white; position:absolute;z-index: -9; width: 100%;
         height: 300px;margin-top: -60px;"></div> 
-        <div style="position: absolute; 
+        <div style="position: absolute;  
         background: white;
         width: 100%;
         height: 300px; 
         z-index: -3;
         margin-top: -60px;"></div> 
-       <p class="top-head">MISSON & VISION</p>  
+       <p class="top-head">MISSON & VISION</p>   
+       <hr style="height: 2px;  
+       background: #E42A11;
+       width: 100px;
+       margin: auto;
+       margin-top: 15px;
+       border: none;"/>  
        <p class="bottom-footer-text" style="text-align: center; 
        color: black;width: 600px;  
     margin: auto;
@@ -1237,12 +1265,12 @@ minimize virgin production, as well as separate mixed gases and remove
 
 contaminants to maximize the lifecycle of refrigerants.</p>
         <div> 
-            <button style="color: white;background: #002856;border: none;font-size: 20px;padding: 13px 38px;">Learn More</button>  
+            <a href="reclamation.html"><button style="color: white;background: #002856;border: none;font-size: 20px;padding: 13px 38px;">Learn More</button></a>  
             <button style="color: #E42A11;
             background: transparent; 
             border: 2px solid #E42A11;
             padding: 10px 30px;
-            font-size: 20px;">See Products</button> 
+            font-size: 20px;">See Products</button>  
         </div>
         </div>
         
@@ -1289,10 +1317,13 @@ contaminants to maximize the lifecycle of refrigerants.</p>
        <p class="bottom-footer-text" style="text-align: center; 
        color: black;width: 600px; 
     margin: auto;
-    margin-top: 30px;
-    font-weight: 100;margin-bottom: 100px;">Our strength, and our mission, is to develop and bring to the market innovative solutions and
+    margin-top: 30px; 
+    font-weight: 100;">Our strength, and our mission, is to develop and bring to the market innovative solutions and
 
 high-quality products that will have a positive effect on a company’s work and business.</p>
+<div class="button-holder">
+<button class="contact-button">Contact Us</button> 
+</div>
     </div> 
     <footer class="footer-distributed"> 
   
@@ -1381,30 +1412,10 @@ function myFunction() {
     });  
     </script>
     <script>
-       $(document).ready(function() {
-		  "use strict";
-		  $('.menu > ul > li:has( > ul)').addClass('menu-dropdown-icon');
-		  $('.menu > ul > li > ul:not(:has(ul))').addClass('normal-sub');
-		  $(".menu > ul > li").hover(function(e) {
-		    if ($(window).width() > 943) {
-		      $(this).children("ul").stop(true, false).fadeToggle(150);
-		      e.preventDefault();
-		    }
-		  });
-		  $(".menu > ul > li").click(function() {
-		    if ($(window).width() <= 943) {
-		      $(this).children("ul").fadeToggle(150);
-		    }
-		  });
-		  $(".menu-mobile").click(function(e) {
-		    $(".menu > ul").toggleClass('show-on-mobile');
-		    e.preventDefault();
-		  });
-		});
-		$(window).resize(function() {
-		  $(".menu > ul > li").children("ul").hide();
-		  $(".menu > ul").removeClass('show-on-mobile');
-		});
+    const menuMobile = document.querySelector('.menu-mobile')
+    menuMobile.addEventListener('click', () => {
+      menuMobile.style.display = "none" 
+    })  
  
     </script>
 </body>
