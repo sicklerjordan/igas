@@ -987,9 +987,9 @@ Mobile style's
   .menu-dropdown-icon:before {
     display: block;
   }
-  .menu > ul {
+  .clearfix {
     display: none;
-    width:100%;
+    width:100%; 
   }
   .menu > ul > li { 
     width: 100%;
@@ -1412,9 +1412,17 @@ function myFunction() {
     });  
     </script>
     <script>
+      function dropDown() {
+      const menu = document.querySelector('.clearfix')
+    if (menu.style.display === 'block') {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = 'block'
+    }
+}
     const menuMobile = document.querySelector('.menu-mobile')
     menuMobile.addEventListener('click', () => {
-      menuMobile.style.display = "none" 
+     dropDown()   
     })  
  
     </script>
