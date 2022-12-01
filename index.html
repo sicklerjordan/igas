@@ -723,14 +723,14 @@ border-radius: 10px;
  }
  .bottom-card{
     background: whitesmoke;
-    width: 300px;
+    width: 600px;  
     height: 400px;  
     margin: 10px;
-    border-radius: 25px;   
+    border-radius: 10px;    
     margin-top: -100px;
     z-index: 99999; 
     display: flex;
-    flex-direction: column;
+    flex-direction: row; 
     justify-content: center;
     align-items: center;
     text-align: center; 
@@ -1236,7 +1236,7 @@ high-quality products that will have a positive effect on a company’s work and
               <div>iGas offers virgin and reclaimed refrigerants in all industry size tanks including refillable and non-refillable cylinders up to ISO containers.</div>
               <div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div> 
           </div> 
-          <img id="card-img" src="finalproduct.jpg" />       
+          <img id="card-img" src="greytanks.jpg" />         
         </div>
         <div class="card">
           <div class="sub-card">
@@ -1283,19 +1283,30 @@ contaminants to maximize the lifecycle of refrigerants.</p>
       <div class="bottom-cards-container" style="height: 400px;width: 100%; display: flex;justify-content: center;align-items: center;">
       
         <div class="bottom-card" style="background: #002856 !important; color: white;">
-            <img src="guy.jpg"  style="width: 290px;border-radius: 25px" />
+            <img src="guy.jpg"  style="width: 310px;border-radius: 10px;height: 100%" />
         <div> 
-            <h2 style="color: white">Domestic Facilities</h2>   
-            
-            <p style="text-align: center;color: white">Helping lenders and servicers transform their business and operations to drive profitable growth, differentiated customer experience and operational efficiency.</p>
+            <h2 style="color: white">Domestic Facilities</h2>    
+            <hr style="height: 2px;  
+       background: #E42A11;
+       width: 90px;  
+       margin: auto;
+       margin-top: 15px;
+       border: none;"/> 
+            <p style="text-align: center;color: white;padding: 20px; 
+            line-height: 30px;">Helping lenders and servicers transform their business and operations to drive profitable growth, differentiated customer experience and operational efficiency.</p>
           </div>
         </div>   
         <div class="bottom-card" style="background: #002856 !important;">   
-            <img src="threetrucks.jpg"  style="width: 290px;border-radius: 25px" />
+            <img src="threetrucks.jpg"  style="width: 310px;border-radius: 10px;height: 100%" />
         <div>
-            <h2 style="color: white">Fleet Transportation</h2>      
-        
-           <p style="text-align: center;color: white">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            <h2 style="color: white">Fleet Transportation</h2>       
+            <hr style="height: 2px;  
+            background: #E42A11;
+            width: 90px;
+            margin: auto;
+            margin-top: 15px;
+            border: none;"/> 
+           <p style="text-align: center;color: white;padding: 20px;line-height: 30px;">Helping lenders and servicers transform their business and operations to drive profitable growth, differentiated customer experience and operational efficiency.</p>
           </div>
         </div> 
     </div>
@@ -1383,7 +1394,7 @@ contaminants to maximize the lifecycle of refrigerants.</p>
     </footer> 
     </div>
     <script>
-      gsap.from('.square',{x: -500, duration: 1,delay: 1})
+      //gsap.from('.square',{x: -700, duration: 1})    
     </script>
     <script>
         window.onscroll = function() {myFunction()}; 
@@ -1405,9 +1416,9 @@ function myFunction() {
     </script>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
     <script type="text/javascript">
-    $(window).bind("load", function() {  
-        $('#movie-area').load('movie.html');                                               
-    });  
+   // $(window).bind("load", function() {  
+       // $('#movie-area').load('movie.html');                                               
+   // });  
     </script>
     <script>
       function dropDown() {
