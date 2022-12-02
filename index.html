@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap" rel="stylesheet">
-    
+   
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css?v=7857324"> 
     <meta charset="UTF-8">
@@ -30,8 +30,7 @@
             position: absolute;
             -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	border-radius: 0% 0% 5% 5%; 
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75); 
 z-index: 999999999999;  
 width: 100%;
 
@@ -279,7 +278,7 @@ width: 268px;
 border-bottom: 5px solid #0054A6; 
 position: relative;
 overflow: hidden;
-box-shadow: 3px 3px 8px black;  
+box-shadow: 1px 1px 10px black;    
 } 
 .sub-card{
     background: #002856;
@@ -869,6 +868,7 @@ border-radius: 10px;
   /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
   box-sizing: border-box;
       clear: right;
+      margin-top: 52px;   
 }
 .menu > ul:before,
 .menu > ul:after {
@@ -995,13 +995,13 @@ Mobile style's
     width: 100%;
     float: none;
     display: block;
-    border: 2px solid black; 
+    border: 1px solid black;  
   }
   .menu > ul > li a {
     padding: 1em; 
     width: 100%;
     display: block;
-    color: #E42A11 !important;  
+    color: white !important;  
   }
   .menu > ul > li > ul {
     position: relative;    
@@ -1074,6 +1074,18 @@ Mobile style's
     width: 468px;
     margin-left: -90px; 
   }
+  .bottom-card{
+    width: 90%;
+    flex-direction: column;  
+    height: auto;  
+  }
+  .big-img{
+  width: 100% !important;   
+    margin-bottom: 20px; 
+}
+.iclaim-header{
+  font-size: 40px !important    
+}
 }
 .contact-button:hover{
   background-color: rgb(	228	42	17 .5);   
@@ -1109,16 +1121,16 @@ Mobile style's
             <div class="right-nav-button" style="position: absolute;right: 0" > 
                 <i style="color: #E42A11;margin-right: 20px;
                 font-size: 20px;" class="fa-solid fa-earth-americas"></i>
-                <button style="    border: none;
+               <a href="refrigerent.html"> <button style="    border: none;
                 background: #E42A11;
                 color: white;
                 font-weight: 900;
-                font-size: 16px;
+                font-size: 14px;
                 margin-right: 0px; 
-                height: 60px;
+                height: 61px;  
                 margin-top: 0px;
-                padding-left: 30px;
-                padding-right: 30px;">Our Products</button>
+                padding-left: 28px;
+                padding-right: 28px;">REFRIGERENT</button></a>  
             </div>
             <div class="ham">
                 <div class="menu-container">
@@ -1137,7 +1149,7 @@ Mobile style's
                     </div>
                   </div>
                   
-            </div>
+            </div> 
         </nav> 
         <ul class="ham-list">
             <li>RECLAMATION</li>
@@ -1226,24 +1238,25 @@ high-quality products that will have a positive effect on a company’s work and
           <div class="sub-card"> 
               <p>Reclamation</p> 
               <div>iClaim provides exclusive advantages that support a healthy future by reducing global warming by refrigerant lifecycle management.</div>
-              <div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div>  
-          </div>
-          <img style="width: 500px;
-          margin-left: -112px;" id="card-img" src="lotsoftanks.jpg" />   
-        </div>
+              <a href="reclamation.html"></a><div style="color: #E42A1C;margin-left: 20px;
+              margin-top: 10px;">Learn More <i class="fa-solid fa-arrow-right"></i></div></a>
+          </div>  
+          <img style="width: 330px;margin-top:-30px;margin-left: -25px;" id="card-img" src="reclaimtanks.png" />   
+        </div>  
         <div class="card">
           <div class="sub-card">
               <p>Refrigerant</p>     
               <div>iGas offers virgin and reclaimed refrigerants in all industry size tanks including refillable and non-refillable cylinders up to ISO containers.</div>
-              <div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div> 
+              <a href="refrigerent.html"><div style="color: #E42A1C;margin-left: 20px;
+                margin-top: 10px;">Learn More <i class="fa-solid fa-arrow-right"></i></div></a>
           </div> 
-          <img id="card-img" src="greytanks.jpg" />         
+          <img id="card-img" src="finaleback1.png" />            
         </div>
         <div class="card">
-          <div class="sub-card">
+          <div class="sub-card"> 
               <p>Original Equipment Manufacturing</p>   
               <div>iGas’ virgin refrigerants are domestically blended and tested to meet AHRI-700 purity standards for any industry.</div>
-              <div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div>  
+              <!--<div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div>--> 
           </div>
           <img style="height: 600px; 
           margin-top: -100px;" id="card-img" src="towergas.jpg" />   
@@ -1252,14 +1265,15 @@ high-quality products that will have a positive effect on a company’s work and
           <div class="sub-card"> 
               <p>HVAC Components</p> 
               <div>CoolMaster products assist in making daily work requirements easier, faster, safer, more economical, and improve working conditions for the industry.</div>
-              <div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div> 
+              <a href="components.html"><div style="color: #E42A1C;margin-left: 20px;
+                margin-top: 10px;">Learn More <i class="fa-solid fa-arrow-right"></i></div></a>
           </div>
           <img id="card-img" src="components.jpg" />     
         </div> 
       </div> 
       <div class="overlay-card">
         <div class="overlay-text">        
-        <h2 style="font-size: 60px;">iClaim – Reclaim Our Future</h2>
+        <h2 class="iclaim-header" style="font-size: 60px;">iClaim – Reclaim Our Future</h2>
         <p class="overlay-para" style="width:600px;margin: auto;
         margin-top: 20px;margin-bottom: 25px; 
     line-height: 25px;
@@ -1284,7 +1298,7 @@ contaminants to maximize the lifecycle of refrigerants.</p>
       <div class="bottom-cards-container" style="height: 400px;width: 100%; display: flex;justify-content: center;align-items: center;">
       
         <div class="bottom-card" style="background: #002856 !important; color: white;">
-            <img src="guy.jpg"  style="width: 310px;border-radius: 10px;height: 100%" />
+            <img class="big-img" src="guy.jpg"  style="width: 310px;border-radius: 10px;height: 100%" />
         <div> 
             <h2 style="color: white">Domestic Facilities</h2>    
             <hr style="height: 2px;  
@@ -1298,7 +1312,7 @@ contaminants to maximize the lifecycle of refrigerants.</p>
           </div>
         </div>   
         <div class="bottom-card" style="background: #002856 !important;">   
-            <img src="threetrucks.jpg"  style="width: 310px;border-radius: 10px;height: 100%" />
+            <img class="big-img" src="threetrucks.jpg"  style="width: 310px;border-radius: 10px;height: 100%" />
         <div>
             <h2 style="color: white">Fleet Transportation</h2>       
             <hr style="height: 2px;  

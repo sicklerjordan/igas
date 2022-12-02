@@ -29,8 +29,7 @@
             position: absolute;
             -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	border-radius: 0% 0% 5% 5%; 
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75); 
 z-index: 999999999999;  
 width: 100%;
 
@@ -241,7 +240,7 @@ input{
     font-family: sans-serif;
     font-weight: bold;
     z-index: 999999;
-    margin-top: 180px;   
+    margin-top: 120px;    
     color: #021333;
     margin-left: 8%;
 
@@ -972,13 +971,13 @@ Mobile style's
     width: 100%;
     float: none;
     display: block;
-    border: 2px solid black; 
+    border: 1px solid black; 
   }
   .menu > ul > li a {
     padding: 1em; 
     width: 100%;
     display: block;
-    color: #E42A11 !important;  
+    color: white !important;  
   }
   .menu > ul > li > ul {
     position: relative;    
@@ -1118,16 +1117,17 @@ video::-webkit-media-controls {
                 background: #E42A11;
                 color: white;
                 font-weight: 900;
-                font-size: 16px;
+                font-size: 14px;
                 margin-right: 0px; 
-                height: 60px;
+                height: 61px;
                 margin-top: 0px;
-                padding-left: 30px;
-                padding-right: 30px;">Our Products</button>
+                padding-left: 28px;
+                padding-right: 28px;">Refrigerent</button>                                                                         
             </div>
             <div class="ham">
                 <div class="menu-container">
                     <div class="menu">
+                        <a href="#" class="menu-mobile"><i class='fa-solid fa-bars'></i></a>   
                       <ul class="clearfix">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="refrigerent.html">Refrigerant</a></li>
@@ -1152,7 +1152,7 @@ video::-webkit-media-controls {
         <div class="hero-header">   
             <div class='logo' style="font-size: 80px !important;    
             margin-left: 0px;">
-                <div class="navLogo" style="color: white;font-size: 32px">iClaim Reclaim Our Future</div>  
+                <div class="navLogo" style="color: white;font-size: 82px">iClaim</div>   
             </div>
             <p class="header-text" style="font-size: 14px;margin-bottom: 20px; color: white;width: 500px ">
                 Recovering, reclaiming, and repurposing
@@ -1288,18 +1288,18 @@ video::-webkit-media-controls {
         margin-top: 30px;width: 500px;
         font-weight: 100;margin-bottom: 100px;">Customers can add any amount of refrigerant (even one cylinder) or any HVAC products 
     
-    to their shipment of empty recovery cylinders at special pricing and free freight allowed!</p>   
+    to their shipment of empty recovery cylinders at special pricing and free freight allowed!</p>    
         </div> 
         <div class="bottom-container" style="display: flex;justify-content: center;align-items: center;gap: 50px;margin-bottom: 50px; ">  
             <div>
-                <img class="space-pic" style="border: 1px solid black; width: 500px;height: 300px;border-radius: 25px;" src="earthfromspace.jpg" /> 
+                <img class="space-pic" style="width: 500px;height: 300px;border-radius: 10px;" src="earthfromspace.jpg" /> 
             </div>
             <div>
                 <p class="space-text" style="width: 500px;line-height: 25px;letter-spacing: 2px;">iClaim™ helps lower our customer’s carbon footprint by providing globally mindful solutions with a continued emphasis on how to protect and preserve our world.</p>
             </div> 
     
         </div> 
-    <footer class="footer-distributed"> 
+    <footer class="footer-distributed">  
   
         <div class="footer-left">
 
@@ -1381,37 +1381,23 @@ function myFunction() {
     </script>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
     <script type="text/javascript">
-    $(window).bind("load", function() {  
-        $('#movie-area').load('movie.html');                                               
-    });  
+   // $(window).bind("load", function() {  
+    //    $('#movie-area').load('movie.html');                                               
+    //});   
     </script>
     <script>
-       $(document).ready(function() {
-		  "use strict";
-		  $('.menu > ul > li:has( > ul)').addClass('menu-dropdown-icon');
-		  $('.menu > ul > li > ul:not(:has(ul))').addClass('normal-sub');
-		  $(".menu > ul").before("<a href=\"#\" class=\"menu-mobile\"><i class='fa-solid fa-bars'></i></a>"); 
-		  $(".menu > ul > li").hover(function(e) {
-		    if ($(window).width() > 943) {
-		      $(this).children("ul").stop(true, false).fadeToggle(150);
-		      e.preventDefault();
-		    }
-		  });
-		  $(".menu > ul > li").click(function() {
-		    if ($(window).width() <= 943) {
-		      $(this).children("ul").fadeToggle(150);
-		    }
-		  });
-		  $(".menu-mobile").click(function(e) {
-		    $(".menu > ul").toggleClass('show-on-mobile');
-		    e.preventDefault();
-		  });
-		});
-		$(window).resize(function() {
-		  $(".menu > ul > li").children("ul").hide();
-		  $(".menu > ul").removeClass('show-on-mobile');
-		});
- 
+       function dropDown() {
+      const menu = document.querySelector('.clearfix')
+    if (menu.style.display === 'block') {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = 'block'
+    }
+}
+    const menuMobile = document.querySelector('.menu-mobile')
+    menuMobile.addEventListener('click', () => {
+     dropDown()   
+    })  
     </script>
 </body>
 </html>
