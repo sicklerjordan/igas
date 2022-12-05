@@ -1002,13 +1002,13 @@ Mobile style's
     width: 100%;
     float: none;
     display: block;
-    border: 2px solid black; 
+    border: 1px solid black;  
   }
   .menu > ul > li a {
     padding: 1em; 
     width: 100%;
     display: block;
-    color: #E42A11 !important;  
+    color: white !important;  
   }
   .menu > ul > li > ul {
     position: relative;    
@@ -1034,7 +1034,9 @@ Mobile style's
   .menu .show-on-mobile {
     display: block;
   }
-  
+  .movie-area-img{
+    margin-top: 30px;  
+  }
 }
 .clearfix{ 
     background: #262f47 !important;
@@ -1079,8 +1081,8 @@ Mobile style's
   }
   #card-img{
     width: 468px;
-    margin-left: -90px; 
-  }
+    margin-left: -80px; 
+  }  
   .large{
     width: 80% !important;  
   }
@@ -1101,6 +1103,14 @@ Mobile style's
 } 
 img{
   transform: rotate(.5deg);  
+}
+@media(max-width: 600px) {
+  .side-box{
+    display: none;
+  } 
+  .first-middle-container{
+    padding-left: 0px  
+  }
 }
     </style>
 </head>
@@ -1145,9 +1155,9 @@ img{
             </div>
             <div class="ham">
                 <div class="menu-container">
-                    <div class="menu">
+                    <div class="menu"> 
                       <a href="#" class="menu-mobile"><i class='fa-solid fa-bars'></i></a>  
-                      <ul class="clearfix">
+                      <ul class="clearfix" style="margin-top: 50px !important;"> 
                         <li><a href="index.html">Home</a></li>
                         <li><a href="refrigerent.html">Refrigerant</a></li>
                         <li><a href="reclamation.html">Reclamation</a></li>
@@ -1192,7 +1202,7 @@ img{
                
             </span> 
             </div>  
-            <div id="movie-area">
+            <div id="movie-area">    
               <img style="width:100%" src="shorter-truck.jpg" />   
             </div>
         </div>
@@ -1422,30 +1432,19 @@ function myFunction() {
    //});  
     </script>   
     <script>
-       document.querySelector(document).ready(function() {
-		  "use strict";
-		  document.querySelector('.menu > ul > li:has( > ul)').classList.add('menu-dropdown-icon');
-		  document.querySelector('.menu > ul > li > ul:not(:has(ul))').classList.add('normal-sub');
-		  document.querySelector(".menu > ul > li").hover(function(e) {
-		    if (document.querySelector(window).width() > 943) {
-		      document.querySelector(this).children("ul").stop(true, false).fadeToggle(150);
-		      e.preventDefault();
-		    }
-		  });
-		  document.querySelector(".menu > ul > li").click(function() {
-		    if (document.querySelector(window).width() <= 943) {
-		      document.querySelector(this).children("ul").fadeToggle(150);
-		    }
-		  });
-		  document.querySelector(".menu-mobile").click(function(e) {
-		    document.querySelector(".menu > ul").classList.toggle('show-on-mobile');
-		    e.preventDefault();
-		  });
-		});
-		document.querySelector(window).resize(function() {
-		  document.querySelector(".menu > ul > li").children("ul").hide();
-		  document.querySelector(".menu > ul").classList.remove('show-on-mobile');
-		});  
+        function dropDown() {
+      const menu = document.querySelector('.clearfix')
+    if (menu.style.display === 'block') {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = 'block'
+    }
+}
+    const menuMobile = document.querySelector('.menu-mobile')
+    menuMobile.addEventListener('click', () => {
+     dropDown()   
+    })  
+  
  
     </script>
 </body>
