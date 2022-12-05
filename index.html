@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" type="image/x-icon" href="justemblem.png"> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -110,8 +111,7 @@ hr{
     margin-left: -20.5px;
     transform: rotate(45deg);
 } 
-      .square{
-    background: #002856;
+      .square{ 
     opacity: .9;
     height: 700px; 
     width: 300px;
@@ -120,8 +120,7 @@ hr{
 } 
       
       .square{
-        background-color: #002856; 
-    bottom: 0;
+        background-color: #262f47;  
     clip-path: polygon(0 0,46% 0,100% 100%,0 100%); 
     height: 670px;  
     left: 0;
@@ -277,13 +276,14 @@ height: 400px;
 width: 268px; 
 border-bottom: 5px solid #0054A6; 
 position: relative;
-overflow: hidden;
-box-shadow: 1px 1px 10px black;    
+overflow: hidden; 
+box-shadow: 0px 16px 40px -40px #262f47;
+background: #fff;  
 } 
 .sub-card{
-    background: #002856;
-    opacity: .8;  
-    width: 100%; 
+    background: #262f47;
+    opacity: .9;  
+    width: 100%;  
     height: 75px; 
     margin-top: 150%;
     transition: 1s; 
@@ -308,6 +308,12 @@ bottom: 0;
     height: 400px;
     width: 268px;  
 }
+
+#card-img1{ 
+    height: 400px;
+    width: 268px;  
+}
+
 .sub-card > p {
     color: white;
     font-family: sans-serif;
@@ -333,7 +339,7 @@ background-color: #0054A6;
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 55px 50px;
-    height: 400px; 
+    height: 300px;  
 }
 
 .footer-distributed .footer-left,
@@ -424,7 +430,7 @@ background-color: #0054A6;
 }
 
 .footer-distributed .footer-center p a{
-	color:  lightseagreen;
+	color:  white; 
 	text-decoration: none;;
 }
 
@@ -450,10 +456,11 @@ background-color: #0054A6;
 
 .footer-distributed .footer-company-about{
 	line-height: 20px;
-	color:  white;
-	font-size: 13px;
+	color:  white; 
+	font-size: 19px;
 	font-weight: normal;
 	margin: 0;
+  line-height: 25px; 
 }
 
 .footer-distributed .footer-company-about span{
@@ -709,7 +716,7 @@ border-radius: 10px;
  }
  .overlay{
     position: absolute;
-    background: #002856;
+        background-color: #262f47; 
     height: 500px;
     width: 100%;
     opacity: .8;   
@@ -722,17 +729,30 @@ border-radius: 10px;
  }
  .bottom-card{
     background: whitesmoke;
-    width: 600px;  
+    width: 530px;   
     height: 350px;   
-    margin: 10px;
-    border-radius: 10px;    
-    margin-top: -100px;
+    margin: 10px;     
+    margin-top: 200px;  
     z-index: 99999; 
-    display: flex;
+    display: flex; 
     flex-direction: row; 
     justify-content: center;
-    align-items: center;
-    text-align: center; 
+    align-items: center; 
+    padding-left: 40px; 
+    padding-right: 40px; 
+ 
+ }
+ .bottom-card-img{
+    background: whitesmoke;
+    width: 530px;   
+    height: 350px;   
+    margin: 10px;     
+    margin-top: 200px;  
+    z-index: 99999; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center; 
  }
  .sticky {
   position: fixed;
@@ -1027,7 +1047,14 @@ Mobile style's
   .menu .show-on-mobile {
     display: block;
   }
-  
+  .text-middle{ 
+    margin-top: 40px;
+    margin-bottom: 40px;  
+  }
+  .iclaim-header{
+    width: 80%;
+    margin: auto; 
+  }
 }
 .clearfix{ 
     background: #262f47 !important;
@@ -1040,7 +1067,8 @@ Mobile style's
   border-radius: 25px;
     padding: 10px 20px;
     color: #E42A11;
-    font-weight: bold;  
+    font-weight: bold; 
+    margin-bottom: 110px;   
 }
 .button-holder{
   width: 100%;
@@ -1065,14 +1093,18 @@ Mobile style's
     height: 700px !important  
   } 
   .top-head{
-    font-size: 40px
+    font-size: 40px 
   }
   .card{
     width: 308px 
   }
   #card-img{
-    width: 468px;
-    margin-left: -90px; 
+    width: 408px !important;  
+    margin-left: -50px !important; 
+  }
+  #card-img1{
+    width: 598px !important;
+    margin-left: -140px !important; 
   }
   .bottom-card{
     width: 90%;
@@ -1086,6 +1118,9 @@ Mobile style's
 .iclaim-header{
   font-size: 40px !important    
 }
+.fa-recycle{
+  left: 144px  !important 
+}
 }
 .contact-button:hover{
   background-color: rgb(	228	42	17 .5);   
@@ -1093,8 +1128,8 @@ Mobile style's
 
     </style>
 </head>
-<body>
-    <div class="container">
+<body style="background: #f7f7f7">
+    <div class="container"> 
         <div class="banner">
             
         </div>
@@ -1111,9 +1146,9 @@ Mobile style's
                 <div class="link">
                     <a href="refrigerent.html">REFRIGERENT</a>
                 </div>
-                <div class="link">
-                    <a href="components.html">COMPONENTS</a>
-                </div>
+                <!--<div class="link">
+                    <a href="components.html">COMPONENTS</a> 
+                </div>-->
                 <div class="link"> 
                     <a href="about.html">ABOUT US</a>  
                 </div>
@@ -1130,7 +1165,7 @@ Mobile style's
                 height: 61px;  
                 margin-top: 0px;
                 padding-left: 28px;
-                padding-right: 28px;">REFRIGERENT</button></a>  
+                padding-right: 28px;">RECLAMATION</button></a>   
             </div>
             <div class="ham">
                 <div class="menu-container">
@@ -1140,7 +1175,7 @@ Mobile style's
                         <li><a href="index.html">Home</a></li>
                         <li><a href="refrigerent.html">Refrigerant</a></li>
                         <li><a href="reclamation.html">Reclamation</a></li>
-                        <li><a href="components.html">Components</a></li> 
+                        <!--<li><a href="components.html">Components</a></li> -->
                         <li><a href="about.html">About</a></li> 
                             
                           </ul>
@@ -1154,13 +1189,13 @@ Mobile style's
         <ul class="ham-list">
             <li>RECLAMATION</li>
             <li>REFRIGERENT</li>
-            <li>COMPONENTS</li>
+           <!-- <li>COMPONENTS</li> -->
             <li>ABOUT US</li>
         </ul>  
         <div class="hero-header">   
-            <div class='logo' style="font-size: 80px !important;   
+            <div class='logo' style="font-size: 80px !important;    
             margin-left: 0px;">
-                <div class="navLogo" style="color: white">IG<span style="font-size: 60px">as usa</span> <span style="font-size: 50px;"></span></div>  
+                <div class="navLogo" style="color: white">iG<span style="font-size: 60px">as usa</span> <span style="font-size: 50px;"></span></div>  
             </div>
             <p class="header-text" style="font-size: 20px;margin-bottom: 20px; color: white;width: 500px ">
                 is a leading supplier of refrigerants and products
@@ -1171,7 +1206,7 @@ for residential, commercial, transport, and industrial refrigeration.
             color: white;
             background: #E42A11; 
             padding: 9px 18px;
-            font-size: 20px;">View Services <i class="fa fa-arrow-right"></i></button>  
+            font-size: 20px;">Refrigerent <i class="fa fa-arrow-right"></i></button>  
         </div>
         <div style="max-height: 700px;position: relative; overflow: hidden;">   
             <div style="display: flex" class="color-div">
@@ -1209,10 +1244,10 @@ for residential, commercial, transport, and industrial refrigeration.
         </div>
     </div>
     <div>
-        <div style="background: white; position:absolute;z-index: -9; width: 100%;
+        <div style="background: #f7f7f7; position:absolute;z-index: -9; width: 100%;
         height: 300px;margin-top: -60px;"></div> 
         <div style="position: absolute;  
-        background: white;
+        background: #f7f7f7;
         width: 100%;
         height: 300px; 
         z-index: -3;
@@ -1233,16 +1268,25 @@ for residential, commercial, transport, and industrial refrigeration.
 high-quality products that will have a positive effect on a company’s work and business.</p>
     </div>
     <div class="first-middle-container"> 
-        <div class="card">
+        <div class="card"> 
              
-          <div class="sub-card"> 
+          <div style="z-index:999" class="sub-card"> 
               <p>Reclamation</p> 
               <div>iClaim provides exclusive advantages that support a healthy future by reducing global warming by refrigerant lifecycle management.</div>
-              <a href="reclamation.html"></a><div style="color: #E42A1C;margin-left: 20px;
+              <a href="reclamation.html"><div style="color: #E42A1C;margin-left: 20px;
               margin-top: 10px;">Learn More <i class="fa-solid fa-arrow-right"></i></div></a>
           </div>  
-          <img style="width: 330px;margin-top:-30px;margin-left: -25px;" id="card-img" src="reclaimtanks.png" />   
-        </div>  
+          <i style="z-index: 99;
+          position: absolute; 
+          top: 285px;
+          left: 124px;
+          font-size: 30px;
+          color: #262f47;" class="fa-solid fa-recycle"></i>  
+          <img style="width: 330px; 
+          margin-top: -75px;
+          margin-left: -28px; 
+          border-bottom: 90px solid grey;" id="card-img" src="yellowtops.png" />    
+        </div>    
         <div class="card">
           <div class="sub-card">
               <p>Refrigerant</p>     
@@ -1250,26 +1294,32 @@ high-quality products that will have a positive effect on a company’s work and
               <a href="refrigerent.html"><div style="color: #E42A1C;margin-left: 20px;
                 margin-top: 10px;">Learn More <i class="fa-solid fa-arrow-right"></i></div></a>
           </div> 
-          <img id="card-img" src="finaleback1.png" />            
+          <img style="margin-top: 10px;    
+          width: 420px; 
+          margin-left: -80px;  
+          transform: rotate(.5deg);
+          border-bottom: 90px solid #262f47;"  id="card-img" src="closertanks.png" />                
         </div>
+        <div class="card">
+          <div class="sub-card">  
+              <p>HVAC Components</p> 
+              <div>CoolMaster products assist in making daily work requirements easier, faster, safer, more economical, and improve working conditions for the industry.</div>
+              <a href="components.html"><div style="color: #E42A1C;margin-left: 20px;
+                margin-top: 10px;">Learn More <i class="fa-solid fa-arrow-right"></i></div></a>
+          </div>
+          <img style="width: 680px; 
+          margin-left: -210px;" id="card-img1" src="comp.png" />          
+        </div>   
         <div class="card">
           <div class="sub-card"> 
               <p>Original Equipment Manufacturing</p>   
               <div>iGas’ virgin refrigerants are domestically blended and tested to meet AHRI-700 purity standards for any industry.</div>
               <!--<div style="color: #E42A1C">Learn More <i class="fa-solid fa-arrow-right"></i></div>--> 
           </div>
-          <img style="height: 600px; 
-          margin-top: -100px;" id="card-img" src="towergas.jpg" />   
+          <img style="height: 600px;  
+          margin-top: -100px;" id="card-img" src="cleantower.png" />   
         </div>
-        <div class="card">
-          <div class="sub-card"> 
-              <p>HVAC Components</p> 
-              <div>CoolMaster products assist in making daily work requirements easier, faster, safer, more economical, and improve working conditions for the industry.</div>
-              <a href="components.html"><div style="color: #E42A1C;margin-left: 20px;
-                margin-top: 10px;">Learn More <i class="fa-solid fa-arrow-right"></i></div></a>
-          </div>
-          <img id="card-img" src="components.jpg" />     
-        </div> 
+        
       </div> 
       <div class="overlay-card">
         <div class="overlay-text">        
@@ -1283,58 +1333,49 @@ minimize virgin production, as well as separate mixed gases and remove
 
 contaminants to maximize the lifecycle of refrigerants.</p>
         <div> 
-            <a href="reclamation.html"><button style="color: white;background: #002856;border: none;font-size: 20px;padding: 13px 38px;">Learn More</button></a>  
+            <a href="reclamation.html"><button style="color: white;background: #E42A11;border: none;font-size: 20px;padding: 13px 38px;">Learn More</button></a>  
             <button style="color: #E42A11;
-            background: transparent; 
+            background: transparent;  
             border: 2px solid #E42A11;
             padding: 10px 30px;
-            font-size: 20px;">See Products</button>  
+            font-size: 20px;">Contact Us</button>  
         </div>
         </div>
         
-        <div class="overlay"></div>  
+        <div class="overlay"></div>   
         <img class="overlay-image" style="width: 100%" src="shorter-truck.jpg" />  
       </div> 
       <div class="bottom-cards-container" style="height: 400px;width: 100%; display: flex;justify-content: center;align-items: center;">
       
-        <div class="bottom-card" style="background: #002856 !important; color: white;">
-            <img class="big-img" src="guy.jpg"  style="width: 310px;border-radius: 10px;height: 100%" />
-        <div> 
-            <h2 style="color: white">Domestic Facilities</h2>    
-            <hr style="height: 2px;  
-       background: #E42A11;
-       width: 90px;  
-       margin: auto;
-       margin-top: 15px;
-       border: none;"/> 
-            <p style="text-align: center;color: white;padding: 20px; 
-            line-height: 30px;">Helping lenders and servicers transform their business and operations to drive profitable growth, differentiated customer experience and operational efficiency.</p>
-          </div>
-        </div>   
-        <div class="bottom-card" style="background: #002856 !important;">   
-            <img class="big-img" src="threetrucks.jpg"  style="width: 310px;border-radius: 10px;height: 100%" />
-        <div>
-            <h2 style="color: white">Fleet Transportation</h2>       
-            <hr style="height: 2px;  
-            background: #E42A11;
-            width: 90px;
-            margin: auto;
-            margin-top: 15px;
-            border: none;"/> 
-           <p style="text-align: center;color: white;padding: 20px;line-height: 30px;">Helping lenders and servicers transform their business and operations to drive profitable growth, differentiated customer experience and operational efficiency.</p>
-          </div>
+        <div class="bottom-card" style="background: #262f47;box-shadow: 0px 16px 40px -40px #262f47;border-bottom: 8px solid #E42A11;">    
+           
+          <div class="text-middle"> 
+            <p style="color: lightgrey; margin-bottom: 20px;">IGas usa</p>  
+              <h2 style="color: white;font-size: 50px; margin-bottom: 20px;">High quality Product</h2>             
+                
+             <p style="color: white;line-height: 30px;"> Each day we strive to design creative, safe, high quality products that will: assist in lowering your cost of business, make daily work requirements easier, faster and more economical and improve working conditions and the environment.</p>
+            </div>  
+          </div>   
+        <div class="bottom-card" style="background: #262f47;box-shadow: 0px 16px 40px -40px #262f47;border-bottom: 8px solid #E42A11;">    
+           
+        <div class="text-middle">   
+          <p style="color: lightgrey; margin-bottom: 20px;">IGas usa</p>    
+            <h2 style="color: white;font-size: 47px; margin-bottom: 20px;">Refrigeration Solutions</h2>         
+              
+           <p style="color: white;line-height: 30px;">Refrigeration solutions for Airports, Hospitals, Office Buildings, Restaurants, Manufacturing, Shopping Malls, Train Stations, Cold Storage,
+            Super Markets, Fast Food, Apartment Complexes, Resorts, Service Centers and more</p>
+          </div>  
         </div> 
-    </div>
+    </div> 
     <div>
-        <div style="background: white; position:absolute;z-index: -9; width: 100%;
+        <div style=" position:absolute;z-index: -9; width: 100%;
         height: 300px;margin-top: -60px;"></div> 
-        <div style="position: absolute; 
-        background: white;
+        <div style="position: absolute;
         width: 100%;
         height: 300px; 
         z-index: -3;
-        margin-top: -60px;"></div> 
-       <p class="top-head" style="margin-top: 100px">Contact Us</p>  
+        margin-top: -60px;"></div>  
+       <p class="top-head" style="margin-top: 200px">Contact Us</p>  
        <hr style="height: 2px;  
        background: #E42A11;
        width: 100px;
@@ -1343,9 +1384,9 @@ contaminants to maximize the lifecycle of refrigerants.</p>
        border: none;"/> 
        <p class="bottom-footer-text" style="text-align: center;  
        color: black;width: 600px;  
-    margin: auto;
+    margin: auto; 
     margin-top: 30px; 
-    font-weight: 100;">We understand your time is valuable, so we make ordering convenient. Please feel free to contact us by any of the options below or submit your inquiry online, and one of our friendly associates will be happy to assist.</p>
+    font-weight: 100;line-height: 25px;">We understand your time is valuable, so we make ordering convenient. Please feel free to contact us by any of the options below or submit your inquiry online, and one of our friendly associates will be happy to assist.</p>
 <div class="button-holder">
 <button class="contact-button">Contact Us</button> 
 </div>
@@ -1395,14 +1436,14 @@ contaminants to maximize the lifecycle of refrigerants.</p>
                 Our mission is to develop innovative solutions that will have a positive effect on our company's work, business and the environment.
             </p>
 
-            <div class="footer-icons">
+          <!--  <div class="footer-icons">
 
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>  
                 <a href="#"><i class="fa-brands fa-google"></i></i></a> 
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
                 <a href="#"><i class="fa-brands fa-instagram"></i></a> 
 
-            </div>
+            </div> --> 
 
         </div>
 
@@ -1431,9 +1472,9 @@ function myFunction() {
     </script>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
     <script type="text/javascript">
-   // $(window).bind("load", function() {  
-  //      $('#movie-area').load('movie.html');                                               
-  //  });   
+   // $(window).bind("load", function() {    
+    //    $('#movie-area').load('movie.html');                                               
+   // });   
     </script>
     <script>
       function dropDown() {
